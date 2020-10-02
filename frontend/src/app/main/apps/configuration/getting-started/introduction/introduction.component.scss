@@ -1,0 +1,45 @@
+@import "src/@fuse/scss/fuse";
+//@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:host {
+
+}
+.editor{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.pol-btn{
+    background-color: #3c4252!important;
+    color: white!important;
+    margin: 15px 10px;
+}
+
+.fa-scissors::before {
+    content: "\f0c4";
+}
+
+.fa-files-o::before {
+    content: "\f0c5";
+}
+
+.fa-repeat::before {
+    content: "\f01e";
+}
+
+.fa-chain-broken::before {
+    content: "\f127";
+}
+
+.fa-picture-o::before {
+    content: "\f03e";
+}
+
+.fa-youtube-play::before {
+    content: "\f03d";
+}
+button.ngx-editor-button.ng-star-inserted i{
+    font-weight: 800!important;
+    font-size: 12px!important;
+    font-family: FontAwesome!important;
+}

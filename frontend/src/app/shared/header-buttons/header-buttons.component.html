@@ -1,0 +1,11 @@
+<div class="header-buttons">
+  <h5 *ngIf="title">{{title}} </h5>
+  <div *ngIf="buttons" class="header-buttons__buttons">
+    <ng-container *ngFor="let button of buttons">
+      <mat-icon [ngStyle]="button.style ? button.style : {}"
+         [title]="button.title " (click)="(!button.disabled ||
+         (button.disabled && !button.disabled())) && button.fn()"
+         [class.disabled-icon]="button.disabled && button.disabled()">{{button.icon}}</mat-icon>
+    </ng-container>
+  </div>
+</div>

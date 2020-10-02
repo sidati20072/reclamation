@@ -1,0 +1,49 @@
+// Import Fuse core library
+@import "@fuse/scss/core";
+
+// Import app.theme.scss
+@import "app/app.theme";
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.mat-dialog-container{
+    padding: 1px!important;
+}
+.mat-form-field-wrapper {
+    padding-bottom: 10px!important;
+}
+.mat-form-field-subscript-wrapper {
+    position: relative!important;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.modal-details {
+    left: 20% !important;
+}
+
+.spaces-between {
+    display: flex !important;
+    justify-content: space-between;
+}
+.space-around {
+    display: flex !important;
+    justify-content: space-around;
+}
+
+
+mat-spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+}
+
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+.ag-theme-alpine {
+    @include ag-theme-alpine();
+}
