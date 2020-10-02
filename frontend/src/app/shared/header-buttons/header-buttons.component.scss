@@ -1,0 +1,21 @@
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__buttons {
+    padding-left: 5px;
+
+    mat-icon {
+      cursor: pointer;
+      color: #1f9da8;
+      padding: 3px;
+      margin-right: 5px;
+      font-size: 15px;
+      &.disabled-icon {
+        opacity: 0.6;
+        color: #b3b0b0;
+      }
+    }
+  }
+}

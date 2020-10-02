@@ -1,0 +1,145 @@
+<div id="dashboard-analytics" class="page-layout blank">
+
+     <!-- HEADER -->
+     <div class="header accent p-24 pb-0" fxLayout="column" fxLayoutAlign="space-between">
+
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+
+            <span class="mat-display-1 my-0 my-sm-24 welcome-message"
+                  [@animate]="{value:'*',params:{x:'50px'}}">Bienvenue, {{name}}
+            </span>
+
+        </div>
+    </div>
+    <!-- / HEADER -->
+     <div class="main-widget">
+
+        <div *ngIf="revenuChart" class="position-relative h-256 pb-16 blue-600">
+            <canvas baseChart
+                    [datasets]="revenuChart.widget1?.datasets[year]"
+                    [labels]="revenuChart.widget1?.labels"
+                    [colors]="revenuChart.widget1?.colors"
+                    [options]="revenuChart.widget1?.options"
+                    [chartType]="revenuChart.widget1?.chartType">
+            </canvas>
+        </div>
+
+    </div> 
+
+    <div class="content">
+
+        <div class="left mr-lg-32">
+
+            <!-- <div class="pb-24 font-size-18 font-weight-300">
+                How are your active users trending over time?
+            </div> -->
+
+            <div fxLayout="column" fxLayoutAlign="start"
+                 fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="start start">
+
+                <!-- Widget 2 -->
+                <div class="widget" fxFlex="100" fxFlex.gt-sm="48">
+
+                    <div class="fuse-card auto-width mb-32" [ngClass.gt-sm]="'mb-0 mr-32'">
+
+                        <div class="p-16 pb-0" fxLayout="row wrap" fxLayoutAlign="start end">
+
+                            <div class="pr-16">
+                                <div class="h3 secondary-text">Reclamation</div>
+                                <div class="font-size-54 font-weight-300 line-height-1 mt-8">
+                                    {{stats?.countClient}}
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="h-96 w-100-p">
+                            <canvas baseChart
+                                    [datasets]="widgets.widget2.datasets"
+                                    [labels]="widgets.widget2.labels"
+                                    [colors]="widgets.widget2.colors"
+                                    [options]="widgets.widget2.options"
+                                    [chartType]="widgets.widget2.chartType">
+                            </canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- / Widget 2 -->
+
+                <!-- Widget 3 -->
+                <div class="widget" fxFlex="100" fxFlex.gt-sm="48">
+
+                    <div class="fuse-card auto-width mb-32" [ngClass.gt-sm]="'mb-0 mr-32'">
+
+                        <div class="p-16 pb-0" fxLayout="row wrap" fxLayoutAlign="start end">
+
+                            <div class="pr-16">
+                                <div class="h3 secondary-text">Reclamation</div>
+                                <div class="font-size-54 font-weight-300 line-height-1 mt-8">
+                                    {{stats?.countPro}}
+                                </div>
+                            </div>
+
+                            <!-- <div class="py-4 font-size-16" fxLayout="row" fxLayoutAlign="start center">
+                                <div fxFlex="row" fxLayoutAlign="start center" class="green-fg"
+                                     *ngIf="widgets.widget3.impressions.ofTarget > 0">
+                                    <mat-icon class="green-fg mr-4">trending_up</mat-icon>
+                                    <span>{{widgets.widget3.impressions.ofTarget}}%</span>
+                                </div>
+                                <div fxFlex="row" fxLayoutAlign="start center" class="red-fg"
+                                     *ngIf="widgets.widget3.impressions.ofTarget < 0">
+                                    <mat-icon class="red-fg mr-4">trending_down</mat-icon>
+                                    <span>{{widgets.widget3.impressions.ofTarget}}%</span>
+                                </div>
+                                <div class="ml-4 text-nowrap">of target</div>
+                            </div> -->
+
+                        </div>
+
+                        <div class="h-96 w-100-p">
+                            <canvas baseChart
+                                    [datasets]="widgets.widget3.datasets"
+                                    [labels]="widgets.widget3.labels"
+                                    [colors]="widgets.widget3.colors"
+                                    [options]="widgets.widget3.options"
+                                    [chartType]="widgets.widget3.chartType">
+                            </canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- / Widget 3 -->
+            </div>
+
+
+
+        </div>
+
+        <div class="right">
+                
+                <!-- Widget 9 -->
+                <div class="fuse-card" fxLayout="row wrap" fxLayout.gt-md="column">
+
+                    <div class="p-16" fxLayout="row" fxLayoutAlign="space-between center">
+                        <div class="h1 pr-16">Top 5 </div>
+                    </div>
+
+
+                    <div class="card-divider full-width"></div>
+
+                    <!-- <div class="p-8 pt-16" fxLayout="row" fxLayoutAlign="start center">
+                        <button mat-button color="accent">GO TO CAMPAIGNS</button>
+                    </div> -->
+
+                </div>
+
+            <!-- / widget 9 -->
+
+    </div>
+
+</div>

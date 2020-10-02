@@ -1,0 +1,22 @@
+<div class="dialog-content-wrapper">
+  <mat-toolbar matDialogTitle class="mat-accent m-0">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+      <span class="title dialog-title"></span>
+      <button mat-icon-button (click)="matDialogRef.close()" aria-label="Close dialog">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-grid-list cols="3" >
+    <mat-grid-tile *ngFor="let category of catgeories" class="col-category"
+    (click)="selectCategory(category)"
+    >
+      <img *ngIf="!category.image" src="assets/no-image.jpg">
+      <img *ngIf="category.image" [src]="category.image.link" >
+      <label>{{category.name}}</label>
+      <mat-icon *ngIf="category.id === selectedCategory">done</mat-icon>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitingore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/GlobalRepositoryRestConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/AttributeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/ColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/ColumnsEnumUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/OrderEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/GenericData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/RegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/ReclamationColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/UserColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/DocumentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/ReclamationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthentificationFiltre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthorizationFiltre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/MVCProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/WebSocketConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/DocumentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/ReclamationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/DocumentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/MediaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/PasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/ReclamationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UploadFileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/test/java/mr/municipality/UserServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitingore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CREDITS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/animations/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/countdown/countdown.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/countdown/countdown.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/countdown/countdown.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/countdown/countdown.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/countdown/countdown.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-content/demo-content.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-content/demo-content.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-content/demo-content.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-sidebar/demo-sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-sidebar/demo-sidebar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo-sidebar/demo-sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/demo/demo.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/highlight/highlight.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/highlight/highlight.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/highlight/highlight.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/highlight/prism-languages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/material-color-picker/material-color-picker.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/material-color-picker/material-color-picker.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/material-color-picker/material-color-picker.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/material-color-picker/material-color-picker.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/material-color-picker/material-color-picker.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/collapsable/collapsable.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/collapsable/collapsable.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/collapsable/collapsable.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/item/item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/item/item.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/horizontal/item/item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/navigation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/navigation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/navigation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/navigation.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/navigation.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/collapsable/collapsable.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/collapsable/collapsable.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/collapsable/collapsable.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/group/group.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/group/group.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/group/group.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/item/item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/item/item.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/navigation/vertical/item/item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/progress-bar/progress-bar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/progress-bar/progress-bar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/progress-bar/progress-bar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/progress-bar/progress-bar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/progress-bar/progress-bar.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/search-bar/search-bar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/search-bar/search-bar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/search-bar/search-bar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/search-bar/search-bar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/search-bar/search-bar.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/shortcuts/shortcuts.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/shortcuts/shortcuts.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/shortcuts/shortcuts.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/shortcuts/shortcuts.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/shortcuts/shortcuts.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/sidebar/sidebar.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/theme-options/theme-options.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/theme-options/theme-options.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/theme-options/theme-options.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/theme-options/theme-options.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/theme-options/theme-options.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget-toggle.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/components/widget/widget.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/directives.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/fuse-if-on-dom/fuse-if-on-dom.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/fuse-inner-scroll/fuse-inner-scroll.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/fuse-mat-sidenav/fuse-mat-sidenav.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/fuse-mat-sidenav/fuse-mat-sidenav.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/fuse.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/mat-colors/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/camelCaseToDash.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/filter.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/getById.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/htmlToPlaintext.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/keys.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/pipes/pipes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/fuse.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_angular-material-fix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_docs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_material.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_page-layouts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_scrollbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/plugins/_ngx-color-picker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/plugins/_ngx-datatable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/plugins/_perfect-scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/plugins/_plugins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/partials/plugins/_prism.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/scss/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/services/config.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/services/copier.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/services/match-media.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/services/splash-screen.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/services/translation-loader.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/types/fuse-config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/types/fuse-navigation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/@fuse/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/appconfig.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/appconfig.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/auth-guard.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/auth-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/categories.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/data-table.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/data-table.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/gevent.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/gevent.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/item.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/jarwis.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/jarwis.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/loading.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/loading.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/media.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/order.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/reviews.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/reviews.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/token.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/token.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/user.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Services/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/calendar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/chat-panel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/chat.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/contacts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/dashboard-analytics.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/dashboard-project.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/e-commerce.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/fake-db.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/faq.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/file-manager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/icons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/invoice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/knowledge-base.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/mail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/quick-panel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/scrumboard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/search.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fake-db/todo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fuse-config/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/chat-panel/chat-panel.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/content/content.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/content/content.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/content/content.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/content/content.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/footer/footer.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/footer/footer.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/horizontal/style-1/style-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/horizontal/style-1/style-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/horizontal/style-1/style-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/horizontal/style-1/style-1.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/navbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/navbar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/navbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/navbar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-2/style-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-2/style-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-2/style-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-2/style-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/quick-panel/quick-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/quick-panel/quick-panel.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/quick-panel/quick-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/quick-panel/quick-panel.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/toolbar/toolbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/toolbar/toolbar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/toolbar/toolbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/toolbar/toolbar.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/components/toolbar/toolbar.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/horizontal/layout-1/layout-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/horizontal/layout-1/layout-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/horizontal/layout-1/layout-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/horizontal/layout-1/layout-1.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/layout.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-1/layout-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-1/layout-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-1/layout-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-1/layout-1.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-2/layout-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-2/layout-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-2/layout-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-2/layout-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-3/layout-3.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-3/layout-3.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-3/layout-3.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout/vertical/layout-3/layout-3.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/apps.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/categories.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/category.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/category/media.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/documentation.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/getting-started.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contact.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/project/project.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/item.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/item.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/item.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/i18n/en.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/i18n/tr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/mail.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/order/order.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password-2/forgot-password-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password-2/forgot-password-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password-2/forgot-password-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password-2/forgot-password-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password-2/forgot-password-2.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password/forgot-password.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password/forgot-password.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password/forgot-password.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password/forgot-password.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/forgot-password/forgot-password.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/lock/lock.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/lock/lock.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/lock/lock.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/lock/lock.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/lock/lock.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login-2/login-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login-2/login-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login-2/login-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login-2/login-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login-2/login-2.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/mail-confirm/mail-confirm.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/mail-confirm/mail-confirm.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/mail-confirm/mail-confirm.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/mail-confirm/mail-confirm.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/mail-confirm/mail-confirm.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register-2/register-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register-2/register-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register-2/register-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register-2/register-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register-2/register-2.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register/register.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register/register.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register/register.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/register/register.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password-2/reset-password-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password-2/reset-password-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password-2/reset-password-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password-2/reset-password-2.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password-2/reset-password-2.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-password.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-password.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-password.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-password.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-password.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-service.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-service.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/coming-soon/coming-soon.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/coming-soon/coming-soon.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/coming-soon/coming-soon.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/coming-soon/coming-soon.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/coming-soon/coming-soon.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/404/error-404.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/404/error-404.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/404/error-404.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/404/error-404.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/404/error-404.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/500/error-500.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/500/error-500.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/500/error-500.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/500/error-500.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/errors/500/error-500.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/faq/faq.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/compact/compact.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/compact/compact.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/compact/compact.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/compact/compact.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/invoice.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/modern/modern.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/modern/modern.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/modern/modern.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/invoices/modern/modern.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/dialogs/article/article.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/dialogs/article/article.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/dialogs/article/article.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/knowledge-base/knowledge-base.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/maintenance/maintenance.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/maintenance/maintenance.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/maintenance/maintenance.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/maintenance/maintenance.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/maintenance/maintenence.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pages.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/pricing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-1/style-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-1/style-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-1/style-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-1/style-1.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-2/style-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-2/style-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-2/style-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-2/style-2.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-3/style-3.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-3/style-3.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-3/style-3.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/pricing/style-3/style-3.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/profile.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/profile.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/profile.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/profile.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/profile.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/about/about.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/about/about.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/about/about.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/about/about.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/photos-videos/photos-videos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/photos-videos/photos-videos.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/photos-videos/photos-videos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/photos-videos/photos-videos.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/timeline/timeline.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/timeline/timeline.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/timeline/timeline.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/profile/tabs/timeline/timeline.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/classic/search-classic.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/pages/search/modern/search-modern.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/cards/cards.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/cards/cards.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/cards/cards.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/cards/cards.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/cards/cards.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/colors/colors.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/colors/colors.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/colors/colors.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/colors/colors.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/forms/forms.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/forms/forms.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/forms/forms.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/forms/forms.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/helper-classes.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/helper-classes.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/helper-classes.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/helper-classes.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/padding-margin/padding-margin.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/padding-margin/padding-margin.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/padding-margin/padding-margin.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/width-height/width-height.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/width-height/width-height.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/helper-classes/tabs/width-height/width-height.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/icons/icons.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/icons/icons.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/icons/icons.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/icons/icons.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/blank/blank.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/blank/blank.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/blank/blank.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-1/full-width-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-1/full-width-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-1/full-width-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-2/full-width-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-2/full-width-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-2/full-width-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-1/full-width-tabbed-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-1/full-width-tabbed-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-1/full-width-tabbed-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-2/full-width-tabbed-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-2/full-width-tabbed-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/full-width-tabbed-2/full-width-tabbed-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-1/left-sidebar-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-1/left-sidebar-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-1/left-sidebar-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-2/left-sidebar-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-2/left-sidebar-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-2/left-sidebar-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-1/left-sidebar-tabbed-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-1/left-sidebar-tabbed-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-1/left-sidebar-tabbed-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-2/left-sidebar-tabbed-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-2/left-sidebar-tabbed-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/left-sidebar-tabbed-2/left-sidebar-tabbed-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-1/right-sidebar-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-1/right-sidebar-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-1/right-sidebar-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-2/right-sidebar-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-2/right-sidebar-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-2/right-sidebar-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-1/right-sidebar-tabbed-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-1/right-sidebar-tabbed-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-1/right-sidebar-tabbed-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-2/right-sidebar-tabbed-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-2/right-sidebar-tabbed-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/carded/right-sidebar-tabbed-2/right-sidebar-tabbed-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/page-layouts.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-1/full-width-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-1/full-width-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-1/full-width-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-tabbed-1/full-width-tabbed-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-tabbed-1/full-width-tabbed-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/full-width-tabbed-1/full-width-tabbed-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-1/left-sidebar-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-1/left-sidebar-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-1/left-sidebar-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-2/left-sidebar-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-2/left-sidebar-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-2/left-sidebar-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-3/left-sidebar-3.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-3/left-sidebar-3.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-3/left-sidebar-3.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-4/left-sidebar-4.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-4/left-sidebar-4.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/left-sidebar-4/left-sidebar-4.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-1/right-sidebar-1.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-1/right-sidebar-1.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-1/right-sidebar-1.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-2/right-sidebar-2.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-2/right-sidebar-2.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-2/right-sidebar-2.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-3/right-sidebar-3.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-3/right-sidebar-3.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-3/right-sidebar-3.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-4/right-sidebar-4.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-4/right-sidebar-4.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/page-layouts/simple/right-sidebar-4/right-sidebar-4.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/headings/headings.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/headings/headings.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/headings/headings.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/helpers/helpers.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/helpers/helpers.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/helpers/helpers.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/inline-text-elements/inline-text-elements.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/inline-text-elements/inline-text-elements.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/inline-text-elements/inline-text-elements.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/message-boxes/message-boxes.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/message-boxes/message-boxes.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/tabs/message-boxes/message-boxes.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/typography.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/typography.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/typography.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/typography/typography.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/ui/ui.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/AddressModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/CategoryModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/EtatOrder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/ItemModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/MediaModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/OrderLineModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/OrderType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/Roles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/Static.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/UserModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/order.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/navigation/i18n/en.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/navigation/i18n/tr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/navigation/navigation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header-buttons/header-buttons.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header-buttons/header-buttons.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header-buttons/header-buttons.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header-buttons/header-buttons.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/utils/grid-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/doc-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/flags/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/flags/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/material-icons/outline/fonts/material-outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/material-icons/outline/fonts/material-outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/material-icons/outline/fonts/material-outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/material-icons/outline/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/Read Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/demo-files/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/fonts/meteocons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/fonts/meteocons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/fonts/meteocons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/meteocons/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Abbott.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Arnold.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Barrera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Blair.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Boyle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Christy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Copeland.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Estes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Harper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Helen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Henderson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Josefina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Katina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Lily.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Mai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Nancy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Nora.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Odessa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Reyna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Shauna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Shepard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Tillman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Trevino.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Tyson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/Velazquez.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/alice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/andrew.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/carl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/danielle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/garry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/james.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/jane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/joyce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/katherine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/avatars/vincent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/backgrounds/dark-material-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/calendar/autumn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/calendar/spring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/calendar/summer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/calendar/winter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card2-large.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card2-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card2-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card3-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cards/card4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/demo-content/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/a-walk-amongst-friends.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/braies-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/fall-glow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/first-snow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/lago-di-braies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/lago-di-sorapis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/never-stop-changing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/product-image-placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/reaching.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ecommerce/yosemite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/examples/shiba1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/examples/shiba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/examples/thumbup-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/file-manager/sample-file-preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/flags/es.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/flags/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/flags/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/fuse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mail/attachment-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mail/attachment-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mail/attachment-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/a-walk-amongst-friends-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/braies-lake-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/fall-glow-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/first-snow-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/lago-di-braies-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/lago-di-sorapis-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/morain-lake-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/never-stop-changing-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/never-stop-changing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/reaching-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/profile/yosemite-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/scrumboard/calendar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/scrumboard/header-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/scrumboard/header-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/scrumboard/mail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/examples/shiba1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/examples/shiba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/examples/thumbup-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logoGibli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/no-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/up.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/upload-icon-png-29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/upload-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.hmr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hmr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/1771421915fb432fab7aa8ce5f2a5d5a_sample2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/3955607e30ee4531827510371d4bbf84_sample2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/66171eeab89347d2aade683a86ee3bae_sample2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/72c01dbd68ad4f179e4bdfb102289242_sample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/7fa5c71fa3544930967f526552b87d33_sample2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/97a35cfe5b414fbdb5a5747e88d9993b_sample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/afa4b691348d405792b5d8cf26ac7e9c_sample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/b8462a5d69bb40f1b35936abc4882c19_sample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/dfbfbe1e668247f99a9849b4a06e84a0_sample2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/e815c0665dfc49b594e5b7f2a0f085ef_sample.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uploads/fec84acc84394d209a36469e24fa42ce_sample.pdf" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitingore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fake</find>
+      <find>logoGibli.png</find>
+      <find>assets/logoGibli.png</find>
+      <find>users</find>
+      <find>userses</find>
+      <find>@import &quot;src/app/main/apps/todo/todo.theme&quot;;</find>
+      <find>tod</find>
+      <find>ExportService</find>
+      <find>private</find>
+      <find>_snackBar</find>
+      <find>[value]</find>
+      <find>boot</find>
+      <find>boo</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/app</dir>
+      <dir>$PROJECT_DIR$/src/assets/images/logos</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.html" />
+        <option value="$PROJECT_DIR$/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/user.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/token.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/pages/faq/faq.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/reviews.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/pages/authentication/reset-password/reset-service.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/navigation/navigation.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.theme.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/apps.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/models/Static.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/stat-pro/stat-pro.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/categories.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contact-list/contact-list.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/Services/reclamation.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.scss" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html" />
+        <option value="$PROJECT_DIR$/.gitingore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="688" />
+    <option name="y" value="27" />
+    <option name="width" value="1222" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
+      <recent name="$PROJECT_DIR$/src/app/Services" />
+      <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation.module.ts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="" />
+      <created>1601121788127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601121788127</updated>
+      <workItem from="1601121789351" duration="25803000" />
+      <workItem from="1601640402680" duration="10809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="36612000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="GraphQL" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/Services/export.service.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/Services/export.service.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contact-list/contact-list.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/Services/categories.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contacts.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="166" column="5" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Services/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Services/reviews.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/apps.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/order/order.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/item/item.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contacts.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="88" column="27" lean-forward="true" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/category/category.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="159" lean-forward="true" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contact.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contact-form/contact-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/alert/alert.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/@fuse/components/confirm-dialog/confirm-dialog.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/snack-bar/typings/snack-bar.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/snack-bar/typings/snack-bar-config.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="12" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="156" column="36" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="4715" column="12" selection-start-line="4715" selection-start-column="12" selection-end-line="4715" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="54" column="24" selection-start-line="54" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/role-renderer/role-renderer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/id-renderer/id-renderer.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ng2-pdf-viewer/src/app/pdf-viewer/pdf-viewer.module.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitingore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,305 @@
+<div *ngIf="!mail" fxLayout="column" fxLayoutAlign="center center" fxFlex>
+    <mat-icon class="s-128 mb-16 select-message-icon hint-text"
+              [@animate]="{value:'*',params:{delay:'300ms',scale:'0.2'}}">
+        email
+    </mat-icon>
+    <span class="select-message-text hint-text" [@animate]="{value:'*',params:{delay:'400ms'}}">
+        <span>{{ 'MAIL.SELECT_A_MESSAGE_TO_READ' | translate }}</span>
+    </span>
+</div>
+
+<div *ngIf="mail">
+
+    <div class="mail-header" fxLayout="row" fxLayoutAlign="space-between center">
+
+        <div>
+            <div class="subject">{{mail.subject}}</div>
+
+            <!-- <div class="labels mt-8" fxLayout="row wrap">
+                <div class="label" *ngFor="let labelId of mail.labels"
+                     fxLayout="row" fxLayoutAlign="start center">
+                    <div class="label-color" [ngStyle]="{'background-color': labels | getById:labelId:'color'}"></div>
+                    <div class="label-title">{{labels | getById:labelId:'title'}}</div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- <div class="actions" fxLayout="row" fxLayoutAlign="start center">
+            <button mat-icon-button (click)="toggleStar($event)" aria-label="Toggle star">
+                <mat-icon class="amber-fg" *ngIf="mail.starred">star</mat-icon>
+                <mat-icon class="secondary-text" *ngIf="!mail.starred">star_border</mat-icon>
+            </button>
+
+            <button mat-icon-button (click)="toggleImportant($event)" aria-label="Toggle important">
+                <mat-icon class="red-fg" *ngIf="mail.important">label</mat-icon>
+                <mat-icon class="secondary-text" *ngIf="!mail.important">label_outline</mat-icon>
+            </button>
+        </div> -->
+    </div>
+
+    <div class="mail-content">
+
+        <div class="info" fxLayout="row" fxLayoutAlign="space-between start">
+
+            <div fxFlex fxLayout="column" fxLayoutAlign="start start">
+
+                <div fxLayout="row" fxLayoutAlign="start start">
+
+                    <div>
+                        <img *ngIf="mail.user?.logo"
+                             src="{{mail.user?.logo.link}}" class="avatar"/>
+
+                        <div *ngIf="!mail.user?.logo" class="avatar" ms-random-class="vm.colors">
+                            {{mail.user.nom[0]}}
+                        </div>
+                    </div>
+
+                    <div fxLayout="column" fxLayoutAlign="start start">
+
+                        <div class="name">
+                            {{mail.user.nom}} {{mail.user.prenom}}
+                        </div>
+
+                        <div class="to" fxLayout="row" fxLayoutAlign="start center">
+                            <div class="to-text">à</div>
+                            <div>moi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="toggle-details" (click)="showDetails = !showDetails">
+                    <span *ngIf="!showDetails">Afficher les détails</span>
+                    <span *ngIf="showDetails">Masquer les details</span>
+                </a>
+
+                <div *ngIf="showDetails" class="details" fxLayout="row" fxLayoutAlign="start start">
+
+                    <div fxLayout="column">
+                        <span class="title">De:</span>
+                        <span class="title">à:</span>
+                        <span class="title">Date:</span>
+                    </div>
+
+                    <div fxLayout="column">
+                        <span class="detail">{{mail.user.email}}</span>
+                        <span class="detail">moi</span>
+                        <span class="detail">{{mail?.createAt | date :  "dd.MMMM"}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-24 pt-32 pb-12">
+                <button mat-raised-button
+                        class="mat-accent compose-dialog-button w-100-p"
+                        (click)="composeDialog()"
+                        aria-label="reply">
+                    Répondre
+                </button>
+            </div>
+        </div>
+
+        <div [innerHTML]="mail.content"></div>
+
+    </div>
+
+    <div *ngIf="mail.medias" class="mail-attachments">
+
+        <div class="title">
+            <span>Pièces jointes</span>
+            ({{mail.medias.length}})
+        </div>
+
+        <div class="attachment-list" fxLayout="row wrap">
+
+            <div class="attachment" fxLayout="column"
+                 *ngFor="let attachment of mail.medias">
+
+                <img class="preview" src="{{attachment.link}}">
+
+                <div fxLayout="column">
+                    <!-- <a href="#" onclick="event.preventDefault()">Afficher</a> -->
+                    <a (click)="download(attachment.link)">Télecharger</a>
+                    <div class="size">({{attachment.size}})</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div *ngIf="mail && mail.responses">
+<div *ngFor="let resp of mail.responses; let i = index;" class="rep-content">
+        <div *ngIf="resp.user.id != currentId">
+                <div class="mail-content" >
+        
+                    <div class="info" fxLayout="row" fxLayoutAlign="space-between start">
+        
+                        <div fxFlex fxLayout="column" fxLayoutAlign="start start">
+        
+                            <div fxLayout="row" fxLayoutAlign="start start">
+        
+                                <div>
+                                    <img *ngIf="mail.user?.logo"
+                                        src="{{mail.user?.logo.link}}" class="avatar"/>
+        
+                                    <div *ngIf="!mail.user?.logo" class="avatar" ms-random-class="vm.colors">
+                                        {{mail.user.nom[0]}}
+                                    </div>
+                                </div>
+        
+                                <div fxLayout="column" fxLayoutAlign="start start">
+        
+                                    <div class="name">
+                                        {{mail.user.nom}} {{mail.user.prenom}}
+                                    </div>
+        
+                                    <div class="to" fxLayout="row" fxLayoutAlign="start center">
+                                        <div class="to-text">à</div>
+                                        <div>moi</div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <a class="toggle-details" (click)="showDetails[i] = !showDetails[i]">
+                                <span *ngIf="!showDetails[i]">Afficher les détails</span>
+                                <span *ngIf="showDetails[i]">Masquer les details</span>
+                            </a>
+        
+                            <div *ngIf="showDetails[i]" class="details" fxLayout="row" fxLayoutAlign="start start">
+        
+                                <div fxLayout="column">
+                                    <span class="title">De:</span>
+                                    <span class="title">à:</span>
+                                    <span class="title">Date:</span>
+                                </div>
+        
+                                <div fxLayout="column">
+                                    <span class="detail">{{mail.user.email}}</span>
+                                    <span class="detail">moi</span>
+                                    <span class="detail">{{mail?.createAt | date :  "dd.MMMM"}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button mat-icon-button  aria-label="More" *ngIf="!showRep[i]" (click)="showRep[i]=true">
+                            <mat-icon>keyboard_arrow_left</mat-icon>
+                        </button>
+                        <button mat-icon-button  aria-label="More" *ngIf="showRep[i]" (click)="showRep[i]=false">
+                            <mat-icon>keyboard_arrow_down</mat-icon>
+                        </button>
+                    </div>
+        
+                    <div *ngIf="showRep[i]" [innerHTML]="resp.content"></div>
+        
+                </div>
+        
+                <div *ngIf="resp.medias && showRep[i]" class="mail-attachments">
+        
+                    <div class="title">
+                        <span>Pièces jointes</span>
+                        ({{resp.medias.length}})
+                    </div>
+        
+                    <div class="attachment-list" fxLayout="row wrap">
+        
+                        <div class="attachment" fxLayout="column"
+                            *ngFor="let attachment of resp.medias">
+        
+                            <img class="preview" src="{{attachment.link}}">
+        
+                            <div fxLayout="column">
+                                <a (click)="download(attachment.link)">Télecharger</a>
+                                <!-- <div class="size">({{attachment.size}})</div> -->
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="resp.user.id == currentId" class="admin-rep">
+                    <div class="mail-content" >
+            
+                        <div class="info" fxLayout="row" fxLayoutAlign="space-between start">
+            
+                            <div fxFlex fxLayout="column" fxLayoutAlign="start start">
+            
+                                <div fxLayout="row" fxLayoutAlign="start start">
+            
+                                    <div>
+                                        <div class="avatar avatar-support" ms-random-class="vm.colors">
+                                            S
+                                        </div>
+                                    </div>
+            
+                                    <div fxLayout="column" fxLayoutAlign="start start">
+            
+                                        <div class="name">
+                                            Support foundIt
+                                        </div>
+            
+                                        <div class="to" fxLayout="row" fxLayoutAlign="start center">
+                                            <div class="to-text">à</div>
+                                            <div>{{mail.user.email}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <a class="toggle-details" (click)="showDetails[i] = !showDetails[i]">
+                                    <span *ngIf="!showDetails[i]">Afficher les détails</span>
+                                    <span *ngIf="showDetails[i]">Masquer les details</span>
+                                </a>
+            
+                                <div *ngIf="showDetails[i]" class="details" fxLayout="row" fxLayoutAlign="start start">
+            
+                                    <div fxLayout="column">
+                                        <span class="title">De:</span>
+                                        <span class="title">à:</span>
+                                        <span class="title">Date:</span>
+                                    </div>
+            
+                                    <div fxLayout="column">
+                                        <span class="detail">moi</span>
+                                        <span class="detail">{{mail.user.email}}</span>
+                                        <span class="detail">{{mail?.createAt | date :  "dd.MMMM"}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button mat-icon-button  aria-label="More" *ngIf="!showRep[i]" (click)="showRep[i]=true">
+                                <mat-icon>keyboard_arrow_left</mat-icon>
+                            </button>
+                            <button mat-icon-button  aria-label="More" *ngIf="showRep[i]" (click)="showRep[i]=false">
+                                <mat-icon>keyboard_arrow_down</mat-icon>
+                            </button>
+                        </div>
+            
+                        <div *ngIf="showRep[i]" [innerHTML]="resp.content"></div>
+            
+                    </div>
+            
+                    <div *ngIf="resp.medias && showRep[i]" class="mail-attachments">
+            
+                        <div class="title">
+                            <span>Pièces jointes</span>
+                            ({{resp.medias.length}})
+                        </div>
+            
+                        <div class="attachment-list" fxLayout="row wrap">
+            
+                            <div class="attachment" fxLayout="column"
+                                *ngFor="let attachment of resp.medias">
+            
+                                <img class="preview" src="{{attachment.link}}">
+            
+                                <div fxLayout="column">
+                                    <a (click)="download(attachment.link)">Télecharger</a>
+                                    <!-- <div class="size">({{attachment.size}})</div> -->
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+</div>
+</div> 

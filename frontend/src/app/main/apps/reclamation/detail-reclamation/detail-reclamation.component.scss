@@ -1,0 +1,46 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
+.left{
+  width: 30%;
+}
+
+.right{
+  width: 65%;
+}
+
+.header{
+  background: #dddddd;
+  height: 39px;
+  border-radius: 6px;
+  padding: 9px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+mat-icon{
+  margin-right: 8px;
+  cursor: pointer;
+}
