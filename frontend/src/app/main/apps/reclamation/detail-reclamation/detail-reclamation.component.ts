@@ -58,4 +58,9 @@ export class DetailReclamationComponent implements OnInit {
             this.getReclamation();
         });
     }
+
+    isAdmin() {
+        const role = localStorage.getItem('role');
+        return  role && role === 'ADMIN';
+    }
 }

@@ -53,10 +53,10 @@ export class AuthService {
         }
     }
 
-    isManager() {
+    isClient() {
         this.loadToken();
         if (this.roles) {
-            const pos = this.roles.map((e) => e.authority).indexOf(Roles.MANAGER);
+            const pos = this.roles.map((e) => e.authority).indexOf(Roles.USER);
             return pos >= 0;
         } else {
             this.logout();
@@ -85,6 +85,6 @@ export class AuthService {
         if (localStorage.getItem('token') !== null) {
             this.loadToken();
         }
-        return this.roles && (this.isAdmin() || this.isManager());
+        return this.roles && (this.isAdmin() || this.isClient());
     }
 }

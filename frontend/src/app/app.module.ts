@@ -54,7 +54,7 @@ const appRoutes: Routes = [
     },
     {
         path: '**',
-        redirectTo: 'apps/dashboards/analytics'
+        redirectTo: 'apps/reclamations'
     }
 ];
 

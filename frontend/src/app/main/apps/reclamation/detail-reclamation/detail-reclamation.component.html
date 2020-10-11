@@ -39,8 +39,7 @@
                         <td>{{doc.documentType}}</td>
                         <td>
                             <span (click)="voir(doc)"> <mat-icon color="primary">visibility</mat-icon> </span>
-                            <span (click)="delete(doc)"> <mat-icon color="warn">delete </mat-icon> </span>
-
+                            <span *ngIf="isAdmin()" (click)="delete(doc)"> <mat-icon color="warn">delete </mat-icon> </span>
                         </td>
                     </tr>
 
