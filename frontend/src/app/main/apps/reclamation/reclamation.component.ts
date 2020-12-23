@@ -146,7 +146,6 @@ export class ReclamationComponent implements OnInit {
                 },
             }
         ];
-        debugger
         this.columnDefs[0]['children'] = this.getColumns(columns);
         this.initTableData();
     }

@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitingore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/dashboards/analytics/analytics.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/Roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/Roles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,10 +35,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -52,14 +47,14 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
       <recent name="$PROJECT_DIR$/src/app/Services" />
       <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation.module.ts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
-      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -78,6 +73,7 @@
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
@@ -96,6 +92,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build-prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build-prod" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,7 +130,30 @@
       <workItem from="1602060427331" duration="489000" />
       <workItem from="1602145443214" duration="802000" />
       <workItem from="1602260089892" duration="712000" />
-      <workItem from="1602433538337" duration="4787000" />
+      <workItem from="1602433538337" duration="5105000" />
+      <workItem from="1602455384980" duration="757000" />
+      <workItem from="1602498762636" duration="473000" />
+      <workItem from="1602501264241" duration="2190000" />
+      <workItem from="1602516181722" duration="374000" />
+      <workItem from="1602660878510" duration="2194000" />
+      <workItem from="1602672551145" duration="1536000" />
+      <workItem from="1602676341813" duration="528000" />
+      <workItem from="1602699322959" duration="1283000" />
+      <workItem from="1602711831869" duration="759000" />
+      <workItem from="1602757355710" duration="1374000" />
+      <workItem from="1602759770129" duration="429000" />
+      <workItem from="1603265351777" duration="599000" />
+      <workItem from="1603275695644" duration="712000" />
+      <workItem from="1603277624481" duration="27000" />
+      <workItem from="1603706155503" duration="240000" />
+      <workItem from="1603716815448" duration="637000" />
+      <workItem from="1603790793173" duration="663000" />
+      <workItem from="1604318727357" duration="1134000" />
+      <workItem from="1604396967074" duration="1514000" />
+      <workItem from="1604398827047" duration="793000" />
+      <workItem from="1604437534562" duration="1485000" />
+      <workItem from="1608633214884" duration="789000" />
+      <workItem from="1608722886066" duration="1085000" />
     </task>
     <servers />
   </component>

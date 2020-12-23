@@ -12,7 +12,7 @@ import {DocumentModel, ReclamationModel} from '../reclamation.model';
 export class DetailReclamationComponent implements OnInit {
     id;
     reclamation: ReclamationModel;
-    private selectedDoc: any;
+    public selectedDoc: any;
 
     constructor(private route: ActivatedRoute, private reclamationService: ReclamationService) {
     }

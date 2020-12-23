@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
     hmr       : false,
-    url : 'https://api.gibli.mr/'
+    url : 'http://192.168.1.121:8181/'
 };
