@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ddc1df1f-3eb1-43c0-898c-44f7e8a69393" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/reclamation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/doc-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/flags/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/flags/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/material-icons/outline/fonts/material-outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/material-icons/outline/fonts/material-outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/material-icons/outline/fonts/material-outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/material-icons/outline/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/Read Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/demo-files/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/fonts/meteocons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/fonts/meteocons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/fonts/meteocons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/selection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/icons/meteocons/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Abbott.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Arnold.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Barrera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Blair.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Boyle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Christy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Copeland.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Estes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Harper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Helen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Henderson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Josefina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Katina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Lily.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Mai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Nancy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Nora.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Odessa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Reyna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Shauna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Shepard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Tillman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Trevino.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Tyson.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/Velazquez.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/alice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/andrew.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/carl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/danielle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/garry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/james.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/jane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/joyce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/katherine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/avatars/vincent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/backgrounds/dark-material-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/calendar/autumn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/calendar/spring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/calendar/summer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/calendar/winter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card2-large.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card2-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card2-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card3-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/cards/card4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/demo-content/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/a-walk-amongst-friends.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/braies-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/fall-glow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/first-snow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/lago-di-braies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/lago-di-sorapis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/never-stop-changing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/product-image-placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/reaching.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/ecommerce/yosemite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/examples/shiba1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/examples/shiba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/examples/thumbup-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/file-manager/sample-file-preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/flags/es.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/flags/tr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/flags/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/logos/fuse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/logos/logo2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/mail/attachment-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/mail/attachment-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/mail/attachment-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/a-walk-amongst-friends-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/braies-lake-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/fall-glow-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/first-snow-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/lago-di-braies-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/lago-di-sorapis-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/morain-lake-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/morain-lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/never-stop-changing-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/never-stop-changing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/reaching-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/profile/yosemite-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/scrumboard/calendar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/scrumboard/header-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/scrumboard/header-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/images/scrumboard/mail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/img/examples/shiba1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/img/examples/shiba2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/img/examples/thumbup-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/logoGibli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/no-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/up.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/upload-icon-png-29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/upload-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/assets/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/contacts-contacts-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/contacts-contacts-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/dashboards-analytics-analytics-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/dashboards-analytics-analytics-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/dashboards-project-project-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/dashboards-project-project-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module~dashboards-project-project-mo~b412ffae.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module~dashboards-project-project-mo~b412ffae.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~reclamation-reclamation-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/default~contacts-contacts-module~reclamation-reclamation-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-apps-apps-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-apps-apps-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-pages-pages-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-pages-pages-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-ui-ui-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main-ui-ui-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/polyfills.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/reclamation-reclamation-module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/reclamation-reclamation-module.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/runtime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/styles.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/vendor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dist/vendor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="reclamation@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="reclamation@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="reclamation@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="reclamation: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="reclamation@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="reclamation: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6143c780-a5e1-4974-afd0-6d0221983fd0/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="62" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://6143c780-a5e1-4974-afd0-6d0221983fd0/schema/reclamation/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.prod.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/Services/user.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/Services/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/mr/municipality/web/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application-docker.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reclamation_backend</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/backend/src/main/resources/application-docker.properties" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6143c780-a5e1-4974-afd0-6d0221983fd0/console.sql" />
+        <option value="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1034" />
+    <option name="y" value="27" />
+    <option name="width" value="886" />
+    <option name="height" value="1043" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="municipality" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="municipality" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reclamation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/reclamation.sql" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddc1df1f-3eb1-43c0-898c-44f7e8a69393" name="Default Changelist" comment="" />
+      <created>1609277764270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609277764270</updated>
+      <workItem from="1609277765450" duration="1162000" />
+      <workItem from="1609279431131" duration="4491000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5653000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32937366" />
+      <window_info anchor="bottom" id="SQL Generator" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="GraphQL" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="RNConsole" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32982844" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.32982844" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application-docker.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1c754394-9f0d-4acd-9734-9798793e005e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://1c754394-9f0d-4acd-9734-9798793e005e/schema/information_schema/view/TABLES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6143c780-a5e1-4974-afd0-6d0221983fd0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="62" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/mr/municipality/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180" />
+      </provider>
+    </entry>
+    <entry file="das://6143c780-a5e1-4974-afd0-6d0221983fd0/schema/reclamation/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/Services/user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/Services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

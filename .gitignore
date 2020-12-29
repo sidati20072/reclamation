@@ -8,3 +8,8 @@ frontend/*.log
 uploads
 
 .idea
+
+frontend/node_modules
+my-datavolume/
+
+uploads-files
