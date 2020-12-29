@@ -1,25 +1,23 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-import { FuseConfigService } from '@fuse/services/config.service';
-import { fuseAnimations } from '@fuse/animations';
-import { HttpClient } from '@angular/common/http';
-import { JarwisService } from 'app/Services/jarwis.service';
-import { TokenService } from 'app/Services/token.service';
-import { Router } from '@angular/router';
-import { AuthService } from 'app/Services/auth.service';
+import {FuseConfigService} from '@fuse/services/config.service';
+import {fuseAnimations} from '@fuse/animations';
+import {JarwisService} from 'app/Services/jarwis.service';
+import {TokenService} from 'app/Services/token.service';
+import {Router} from '@angular/router';
+import {AuthService} from 'app/Services/auth.service';
 import {managerNavigation, navigation} from '../../../../navigation/navigation';
 import {FuseNavigationService} from '../../../../../@fuse/components/navigation/navigation.service';
 
 @Component({
-    selector     : 'login',
-    templateUrl  : './login.component.html',
-    styleUrls    : ['./login.component.scss'],
+    selector: 'login',
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    animations   : fuseAnimations
+    animations: fuseAnimations
 })
-export class LoginComponent implements OnInit
-{
+export class LoginComponent implements OnInit {
     loginForm: FormGroup;
     loginFailed: Boolean;
     navigation: any;
@@ -38,18 +36,17 @@ export class LoginComponent implements OnInit
         private Token: TokenService,
         private authService: AuthService,
         private router: Router
-    )
-    {
+    ) {
         // Configure the layout
         this._fuseConfigService.config = {
             layout: {
-                navbar   : {
+                navbar: {
                     hidden: true
                 },
-                toolbar  : {
+                toolbar: {
                     hidden: true
                 },
-                footer   : {
+                footer: {
                     hidden: true
                 },
                 sidepanel: {
@@ -66,27 +63,29 @@ export class LoginComponent implements OnInit
     /**
      * On init
      */
-    ngOnInit(): void
-    {
+    ngOnInit(): void {
         this.loginForm = this._formBuilder.group({
-            username   : ['', [Validators.required]],
+            username: ['', [Validators.required]],
             password: ['', Validators.required]
         });
         this.loginFailed = false;
     }
 
-    onSubmit(){
+    onSubmit() {
         this.authService.login(this.loginForm.value).subscribe(
             result => {
                 // this.handleResponse(result.headers.get('authorization'));
                 this.authService.saveToken(result.headers.get('authorization'));
-                this.authService.isAdmin() || this.authService.isManager() ?
+                this.authService.isAdmin() || this.authService.isClient() ?
                     this.router.navigateByUrl('/apps/contacts') : this.authService.logout();
                 // Get default navigation
                 this.navigation = this.authService.isAdmin() ? navigation : managerNavigation;
-
+                if (this.authService.isAdmin()) {
+                    localStorage.setItem('role', 'ADMIN');
+                }else {
+                    localStorage.setItem('role', 'USER');
+                }
                 this._fuseNavigationService.unregister('main');
-
                 // Register the navigation to the service
                 this._fuseNavigationService.register('main', this.navigation);
 
@@ -100,19 +99,20 @@ export class LoginComponent implements OnInit
             }
         );
     }
-    handleResponse(data){
+
+    handleResponse(data) {
         this.Token.handle(data);
 
-        if (this.Token.admin){
+        if (this.Token.admin) {
             // this.Token.setName(data.nom+" "+data.prenom)
             this.router.navigateByUrl('/apps/contacts');
         }
 
-        
-        console.log('admin? ' + this.Token) ;
-        console.log('admin? ' + this.Token.admin) ;
+
+        console.log('admin? ' + this.Token);
+        console.log('admin? ' + this.Token.admin);
         console.log('loged? ' + this.Token.loggedIn);
-        
+
     }
 
 }

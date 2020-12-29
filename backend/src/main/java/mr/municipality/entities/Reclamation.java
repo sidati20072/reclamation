@@ -25,7 +25,7 @@ public class Reclamation {
     private String lot;
     private String etat;
     private Date createdAt;
-    @ManyToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)
     private List<Document> Documents = new ArrayList<>();
 

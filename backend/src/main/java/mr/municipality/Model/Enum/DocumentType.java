@@ -2,11 +2,10 @@ package mr.municipality.Model.Enum;
 
 public enum DocumentType {
     AVIS("AVIS"),
-    COMMANDE("COMMANDE"),
+    FEUILLE("FEUILLE"),
     DEMANDE("DEMANDE"),
     FICHE("FICHE"),
-    AUTRE("AUTRE"),
-    ;
+    AUTRE("AUTRE");
 
     private String name = "";
 

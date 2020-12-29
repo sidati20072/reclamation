@@ -12,7 +12,7 @@ import {DocumentModel, ReclamationModel} from '../reclamation.model';
 export class DetailReclamationComponent implements OnInit {
     id;
     reclamation: ReclamationModel;
-    private selectedDoc: any;
+    public selectedDoc: any;
 
     constructor(private route: ActivatedRoute, private reclamationService: ReclamationService) {
     }
@@ -57,5 +57,10 @@ export class DetailReclamationComponent implements OnInit {
         this.reclamationService.deleteDocument(doc.id).subscribe(value => {
             this.getReclamation();
         });
+    }
+
+    isAdmin() {
+        const role = localStorage.getItem('role');
+        return  role && role === 'ADMIN';
     }
 }

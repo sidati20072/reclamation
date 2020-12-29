@@ -26,7 +26,7 @@ export class AddReclamationDocsComponent {
         private _formBuilder: FormBuilder, private reclamationService: ReclamationService
     ) {
         // Set the defaults
-        this.dialogTitle = 'Ajout document a la reclamation (lot : ' + _data.reclamation.lot + ')';
+        this.dialogTitle = 'Ajout document a la reclamation (Num dossier : ' + _data.reclamation.lot + ')';
     }
 
     selectFiles(event) {

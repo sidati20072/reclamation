@@ -6,7 +6,6 @@ import {FuseConfirmDialogComponent} from '../../../../@fuse/components/confirm-d
 import {DataTableService} from '../../../Services/data-table.service';
 import {TableType} from '../../../models/Static';
 import {isFirstColumn} from '../../../shared/utils/grid-utils';
-import {RoleRendererComponent} from '../../../shared/renderer/role-renderer/role-renderer.component';
 import {HeaderButtonsComponent} from '../../../shared/header-buttons/header-buttons.component';
 import {ReclamationService} from './reclamation.service';
 import {Router} from '@angular/router';
@@ -14,7 +13,6 @@ import {AddReclamationComponent} from './add-reclamation/add-reclamation.compone
 import {AddReclamationDocsComponent} from './add-reclamation-docs/add-reclamation-docs.component';
 import {IdRendererComponent} from '../../../shared/renderer/id-renderer/id-renderer.component';
 import {DocRendererComponent} from '../../../shared/renderer/doc-renderer/doc-renderer.component';
-
 @Component({
     selector: 'app-reclamation',
     templateUrl: './reclamation.component.html',
@@ -29,6 +27,7 @@ export class ReclamationComponent implements OnInit {
     gridColumnApi;
     confirmDialogRef: MatDialogRef<FuseConfirmDialogComponent>;
     selectedReclamation: any;
+    private role: any;
 
     constructor(
         private _matDialog: MatDialog,
@@ -40,6 +39,7 @@ export class ReclamationComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.role = localStorage.getItem('role');
         this.dataTableService.getTableColumns(TableType.RECLAMATION_VIEW).subscribe(columns => {
             this.initTableConfig(columns);
         });
@@ -111,9 +111,9 @@ export class ReclamationComponent implements OnInit {
             * Icons should be from font-awesome v4.7
             * https://fontawesome.com/v4.7.0/icons/
             * */
-                    buttons: [
+                    buttons: this.role && this.role === 'ADMIN' ? [
                         {
-                            title: 'Edit',
+                            title: 'Ajout',
                             icon: 'add',
                             fn: () => {
                                 this.newContact();
@@ -135,11 +135,18 @@ export class ReclamationComponent implements OnInit {
                                 this.deleteContact();
                             }
                         },
-                    ]
+                        {
+                            title: 'Export',
+                            icon: 'import_export',
+                            fn: () => {
+                                this.onExport();
+                            }
+                        },
+                    ] : []
                 },
             }
         ];
-        this.columnDefs[0]['children'] = columns;
+        this.columnDefs[0]['children'] = this.getColumns(columns);
         this.initTableData();
     }
 
@@ -174,4 +181,25 @@ export class ReclamationComponent implements OnInit {
             this.initTableData();
         });
     }
+
+    onExport() {
+        const params = {
+            columnSeparator: ';'
+        }
+        this.gridApi.exportDataAsCsv(params);
+    }
+
+    getColumns(columns: any[]) {
+        return columns.map(value => {
+            if (value.field === 'lot'){
+                value.headerName = 'Num dossier';
+                value.header = 'Num dossier';
+                return value;
+            }
+            else {
+                return value;
+            }
+        });
+    }
+
 }

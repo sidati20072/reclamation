@@ -17,7 +17,7 @@
 
       <div  fxLayout="row" fxLayoutAlign="start start">
         <mat-form-field appearance="outline" fxFlex>
-          <mat-label>Lot</mat-label>
+          <mat-label>Num dossier</mat-label>
           <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
           <input name="lot" formControlName="lot" matInput required>
         </mat-form-field>
@@ -27,8 +27,9 @@
           <mat-label>etat</mat-label>
           <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
           <mat-select formControlName="etat" >
-            <mat-option value="en cours">En cours</mat-option>
-            <mat-option value="termine">Terminé</mat-option>
+            <mat-option value="non paye">Non payé</mat-option>
+            <mat-option value="paye acompte">Payé acompte</mat-option>
+            <mat-option value="paye">Payé</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
