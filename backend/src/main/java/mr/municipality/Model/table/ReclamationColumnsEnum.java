@@ -14,6 +14,8 @@ public enum ReclamationColumnsEnum implements ColumnsEnum {
     id("id", true, true, true,"idRenderer"),
     lot("lot", true, true, true,""),
     etat("etat", true, true, true,""),
+    total("total", true, true, true,""),
+    ncin("ncin", true, true, true,""),
     document("document", true, true, true,"docRenderer"),
     createdAt("createdAt", true, true, true, AttributeType.DATE,"");
 

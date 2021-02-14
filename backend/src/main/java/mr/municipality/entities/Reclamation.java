@@ -24,6 +24,8 @@ public class Reclamation {
     @Column(unique = true)
     private String lot;
     private String etat;
+    private Float total;
+    private String ncin;
     private Date createdAt;
     @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)
