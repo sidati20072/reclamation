@@ -49,7 +49,8 @@ export class ReclamationComponent implements OnInit {
         this.dialogRef = this._matDialog.open(AddReclamationComponent, {
             panelClass: 'contact-form-dialog',
             data: {
-                action: 'new'
+                action: 'new',
+                reclamation: this.selectedReclamation != null ? this.selectedReclamation : {}
             }
         });
         this.dialogRef.afterClosed().subscribe(response => {
@@ -194,6 +195,10 @@ export class ReclamationComponent implements OnInit {
             if (value.field === 'lot'){
                 value.headerName = 'Num dossier';
                 value.header = 'Num dossier';
+                return value;
+            }else if (value.field === 'total'){
+                value.headerName = 'Montant';
+                value.header = 'Montant';
                 return value;
             }
             else {

@@ -2,7 +2,7 @@ frontend/node_modules/*
 
 frontend/nodes_modules
 frontend/node_modules/*
-frontend/dist
+frontend/dist/*
 frontend/node_modules/
 frontend/*.log
 uploads
@@ -13,3 +13,4 @@ frontend/node_modules
 my-datavolume/
 
 uploads-files
+

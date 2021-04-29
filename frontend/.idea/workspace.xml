@@ -2,20 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/ReclamationColumnsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/ReclamationColumnsEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application-docker.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application-docker.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/contacts/contacts.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contacts-contacts-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contacts-contacts-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dashboards-analytics-analytics-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dashboards-analytics-analytics-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dashboards-project-project-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/dashboards-project-project-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module~dashboards-project-project-mo~b412ffae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~dashboards-analytics-analytics-module~dashboards-project-project-mo~b412ffae.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~reclamation-reclamation-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/default~contacts-contacts-module~reclamation-reclamation-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-apps-apps-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-apps-apps-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-pages-pages-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-pages-pages-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-ui-ui-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main-ui-ui-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/reclamation-reclamation-module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/reclamation-reclamation-module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/runtime.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="npm.build-prod">
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -154,6 +183,12 @@
       <workItem from="1604437534562" duration="1485000" />
       <workItem from="1608633214884" duration="789000" />
       <workItem from="1608722886066" duration="1085000" />
+      <workItem from="1613426278278" duration="1532000" />
+      <workItem from="1613512162415" duration="1678000" />
+      <workItem from="1613742846583" duration="386000" />
+      <workItem from="1613781959825" duration="1726000" />
+      <workItem from="1614891675663" duration="1814000" />
+      <workItem from="1618612528149" duration="678000" />
     </task>
     <servers />
   </component>
