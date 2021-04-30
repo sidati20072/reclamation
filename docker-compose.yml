@@ -14,9 +14,20 @@ services:
       - 3308:3306
     volumes:
       - ./my-datavolume:/var/lib/mysql
-
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - myapp-mysql
+    environment:
+      PMA_HOST: myapp-mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80   
   backend:
-    image: zahrabrahim/reclamation-backend:0.0.1
+    image: zahrabrahim/reclamation-backend:0.0.7
     restart: on-failure
     depends_on:
       - myapp-mysql
@@ -32,7 +43,7 @@ services:
     volumes:
       - ./uploads-files:/uploads
   reclamation_frontend:
-    image: zahrabrahim/reclamation-frontend:0.0.1
+    image: zahrabrahim/reclamation-frontend:0.0.7
     links:
       - "backend"
     depends_on:

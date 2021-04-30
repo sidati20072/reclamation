@@ -25,21 +25,20 @@ export class AddReclamationComponent {
     ) {
         // Set the defaults
         this.action = _data.action;
-
-        if (this.action === 'edit') {
-            this.dialogTitle = 'Modifier Reclamation';
-            this.reclamation = _data.contact;
-        } else {
-            this.dialogTitle = 'Nouvel Reclamation';
-        }
-        this.recForm = this.buildForm();
+        this.reclamation = _data.reclamation;
+        this.dialogTitle = 'Reclamation';
+         this.buildForm();
     }
 
-    buildForm(): FormGroup {
-        return this._formBuilder.group({
+    buildForm() {
+        this.recForm = this._formBuilder.group({
             id: [this.reclamation.id || null],
             lot: [this.reclamation.lot || '', Validators.required],
-            etat: [this.reclamation.etat || '']
+            ncin: [this.reclamation.ncin || '', Validators.required],
+            total: [this.reclamation.total || '', Validators.required],
+            etat: [this.reclamation.etat || ''],
+            nom: [this.reclamation.nom || ''],
+            degrevement: [this.reclamation.degrevement || '']
         });
 
     }
@@ -48,7 +47,7 @@ export class AddReclamationComponent {
         this.reclamationService.save(this.recForm.value).subscribe(value => {
             this.matDialogRef.close();
         }, error1 => {
-            this._snackBar.open('Une erreur est survenue lors de la création du reclamation', '',{
+            this._snackBar.open('Une erreur est survenue lors de la création du reclamation', '', {
                 duration: 1000,
             });
             console.log(error1);

@@ -11,6 +11,10 @@ export class ReclamationModel {
     id: number;
     lot: string;
     etat: string;
+    total: number;
+    ncin: string;
+    nom: string;
+    degrevement: string;
     documents: DocumentModel[];
 }
 
