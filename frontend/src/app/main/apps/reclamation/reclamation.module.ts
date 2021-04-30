@@ -12,6 +12,7 @@ import {DetailReclamationComponent} from './detail-reclamation/detail-reclamatio
 import {IdRendererComponent} from '../../../shared/renderer/id-renderer/id-renderer.component';
 import {DocRendererComponent} from '../../../shared/renderer/doc-renderer/doc-renderer.component';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
+import {MatDatepickerModule} from '@angular/material';
 
 const routes: Routes = [
     {
@@ -35,7 +36,8 @@ const routes: Routes = [
         RouterModule.forChild(routes),
         AgGridModule.withComponents([IdRendererComponent, DocRendererComponent]),
         SharedModule,
-        PdfViewerModule
+        PdfViewerModule,
+        MatDatepickerModule
     ],
     entryComponents: [AddReclamationComponent, AddReclamationDocsComponent],
     providers: [

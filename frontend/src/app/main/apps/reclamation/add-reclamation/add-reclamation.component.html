@@ -25,26 +25,36 @@
             </div>
             <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Ncin</mat-label>
+                    <mat-label>Address</mat-label>
                     <input name="ncin" formControlName="ncin" matInput required>
                 </mat-form-field>
             </div>
             <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Montant </mat-label>
+                    <mat-label>Montant</mat-label>
                     <input name="total" formControlName="total" matInput required>
                 </mat-form-field>
             </div>
-         <div fxLayout="row" fxLayoutAlign="start start">
+            <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Nom </mat-label>
+                    <mat-label>Nom</mat-label>
                     <input name="nom" formControlName="nom" matInput required>
                 </mat-form-field>
             </div>
-         <div fxLayout="row" fxLayoutAlign="start start">
+            <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Degrevement </mat-label>
+                    <mat-label>Degrevement</mat-label>
                     <input name="degrevement" formControlName="degrevement" matInput required>
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start start">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
             </div>
 

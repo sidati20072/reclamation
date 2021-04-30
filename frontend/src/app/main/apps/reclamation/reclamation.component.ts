@@ -201,6 +201,11 @@ export class ReclamationComponent implements OnInit {
                 value.header = 'Montant';
                 return value;
             }
+            else if (value.field === 'ncin'){
+                value.headerName = 'Address';
+                value.header = 'Address';
+                return value;
+            }
             else {
                 return value;
             }
