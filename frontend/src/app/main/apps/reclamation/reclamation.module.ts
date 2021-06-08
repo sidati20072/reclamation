@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, DatePipe} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {ReclamationComponent} from './reclamation.component';
 import {AgGridModule} from 'ag-grid-angular';
@@ -42,7 +42,8 @@ const routes: Routes = [
     entryComponents: [AddReclamationComponent, AddReclamationDocsComponent],
     providers: [
         ContactsService,
-        ReclamationService
+        ReclamationService,
+        DatePipe
     ],
 })
 export class ReclamationModule {
