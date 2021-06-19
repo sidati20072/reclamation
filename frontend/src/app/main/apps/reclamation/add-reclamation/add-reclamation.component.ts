@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef, MatSnackBar} from '@angular/material';
 import {ReclamationModel} from '../reclamation.model';
 import {ReclamationService} from '../reclamation.service';
+import {DatePipe} from '@angular/common';
 
 @Component({
     selector: 'app-add-reclamation',
@@ -21,7 +22,7 @@ export class AddReclamationComponent {
     constructor(
         public matDialogRef: MatDialogRef<AddReclamationComponent>,
         @Inject(MAT_DIALOG_DATA) private _data: any, private _snackBar: MatSnackBar,
-        private _formBuilder: FormBuilder, private reclamationService: ReclamationService
+        private _formBuilder: FormBuilder, private reclamationService: ReclamationService, private datePipe: DatePipe
     ) {
         // Set the defaults
         this.action = _data.action;
@@ -45,6 +46,7 @@ export class AddReclamationComponent {
     }
 
     save() {
+        this.recForm.value.date = this.datePipe.transform(this.recForm.value.date.toString(), 'yyyy-MM-d');
         this.reclamationService.save(this.recForm.value).subscribe(value => {
             this.matDialogRef.close();
         }, error1 => {

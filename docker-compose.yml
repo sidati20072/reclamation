@@ -27,7 +27,7 @@ services:
     ports:
       - 8081:80   
   backend:
-    image: zahrabrahim/reclamation-backend:0.0.7
+    image: reclamation-backend:0.0.9
     restart: on-failure
     depends_on:
       - myapp-mysql
@@ -43,7 +43,7 @@ services:
     volumes:
       - ./uploads-files:/uploads
   reclamation_frontend:
-    image: zahrabrahim/reclamation-frontend:0.0.7
+    image: reclamation-frontend:0.0.9
     links:
       - "backend"
     depends_on:
