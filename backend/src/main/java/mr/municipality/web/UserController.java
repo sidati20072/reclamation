@@ -49,9 +49,4 @@ public class UserController {
                 .collect(Collectors.toList());
     }
 
-    @GetMapping("/users/{username}")
-    public User UserFilter(@PathVariable String username) {
-        return userRepository.findByUsername(username);
-    }
-
 }

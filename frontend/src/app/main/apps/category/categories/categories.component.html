@@ -1,0 +1,98 @@
+<div id="categories" class="page-layout simple">
+    <!-- HEADER -->
+    <div class="header accent p-16 p-sm-24" fxLayout="column" fxLayoutAlign="center center">
+
+        <div class="hero-text">
+            <mat-icon class="hero-icon">list</mat-icon>
+            <h1 [@animate]="{value:'*',params:{delay:'100ms', y:'25px'}}">
+                Gestion des Catégories
+            </h1>
+            <h3 [@animate]="{value:'*',params:{delay:'100ms', y:'25px'}}">
+            </h3>
+        </div>
+
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content p-24">
+
+        <div fxLayout="column" fxLayoutAlign="center">
+
+            <div class="filters" fxLayout="column" fxLayoutAlign="center center"
+                 fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center">
+
+                <mat-form-field appearance="outline" floatLabel="always" class="category-search">
+                    <mat-label>Rechercher un catégorie </mat-label>
+                    <input matInput placeholder="Saisie un mot-clé..."
+                           [(ngModel)]="searchTerm"
+                           (input)="filterCategoriesByTerm()">
+                </mat-form-field>
+            </div>
+            <div class="categories" fxLayout="row wrap" fxLayoutAlign="center" [@animateStagger]="{value:'50'}">
+
+                    <div class="category" *ngFor="let category of filteredCategories" fxFlex="100" fxFlex.gt-xs="50"
+                    fxFlex.gt-sm="33"  [@animate]="{value:'*',params:{y:'100%'}}">
+
+                   <div class="category-content" fxLayout="column" fxFlex="1 1 auto">
+
+                       <div class="header" fxLayout="row" fxLayoutAlign="center center"
+                            >
+
+                           <div class="category" fxFlex>
+                               {{category.name}}
+                           </div>
+
+                       </div>
+
+                       <div class="content"  fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 auto">
+                           <!-- <div class="updated"> {{category.description}}</div> -->
+                           <img class="cat-image" src="{{category.image.link}}"> 
+                       </div>
+
+                       <div class="footer" fxLayout="row" fxLayoutAlign="center center">
+                           <button mat-button color="accent"
+                                   [routerLink]="'/apps/categorie/sub/' + category.id">
+                               MODIFER
+                           </button>
+                           
+                           <button mat-button color="accent" (click)="deleteCategory(category.id)" disabled>
+                                SUPPRIMER
+                            </button>
+                       </div>
+
+                   </div>
+
+               </div>
+
+               <div class="category"  fxFlex="100" fxFlex.gt-xs="50"
+                     fxFlex.gt-sm="33"  [@animate]="{value:'*',params:{y:'100%'}}">
+
+                    <div class="category-content" fxLayout="column" fxFlex="1 1 auto">
+
+                       
+
+                        <div class="content"  (click)="newCategory()"  fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 auto">
+                            <!-- <div class="updated"> {{category.description}}</div> -->
+                            <div class="add-container">
+                                <img class="add-img" src="../../../../../assets/add.png"> 
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="no-categories" *ngIf="filteredCategories.length === 0">
+                    No categories found!
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- / CONTENT -->
+
+</div>

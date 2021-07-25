@@ -11,14 +11,16 @@ import java.util.List;
 import java.util.Map;
 
 public enum UserColumnsEnum implements ColumnsEnum {
-    id("id", true, true, true,"", "Id"),
-    username("username", true, true, true,"", "Nom d'utilsateur"),
-    email("email", true, true, true,"", "Email"),
-    nom("nom", true, true, true,"", "Nom"),
-    prenom("prenom", true, true, true,"", "Prenom"),
-    etat("etat", true, true, true,"", "Etat"),
-    roles_name("roles", true, true, true,  "roleRenderer", "Role"),
-    createdAt("createAt", true, true, true, AttributeType.DATE,"", "Créé à ");
+    id("id", true, true, true,""),
+    username("username", true, true, true,""),
+    email("email", true, true, true,""),
+    nom("nom", true, true, true,""),
+    prenom("prenom", true, true, true,""),
+    etat("etat", true, true, true,""),
+    nomResto("nomResto", true, true, true,""),
+    actives("active", true, true, true,""),
+    roles_name("roles", true, true, true,  "roleRenderer"),
+    createdAt("createAt", true, true, true, AttributeType.DATE,"");
 
     private String field;
     private boolean sortable;
@@ -27,11 +29,10 @@ public enum UserColumnsEnum implements ColumnsEnum {
     private boolean editable;
     private String type;
     private String cellRenderer;
-    private String headerName;
 
 
     UserColumnsEnum(
-            String field, boolean sortable, boolean active, boolean filterable, AttributeType type, String cellRenderer, String headerName) {
+            String field, boolean sortable, boolean active, boolean filterable, AttributeType type, String cellRenderer) {
         this.field = field;
         this.sortable = sortable;
         this.active = active;
@@ -39,15 +40,14 @@ public enum UserColumnsEnum implements ColumnsEnum {
         this.editable = false;
         this.type = type.getValue();
         this.cellRenderer = cellRenderer;
-        this.headerName = headerName;
     }
 
-    UserColumnsEnum(String field, boolean sortable, boolean active, boolean filterable, String cellRenderer, String headerName) {
-        this(field, sortable, active, filterable, AttributeType.STRING, cellRenderer, headerName);
+    UserColumnsEnum(String field, boolean sortable, boolean active, boolean filterable, String cellRenderer) {
+        this(field, sortable, active, filterable, AttributeType.STRING, cellRenderer);
     }
 
     public Map<String, Object> asMap(String i18nPrefix) {
-        return ColumnsEnumUtils.asMap(i18nPrefix, field, sortable, active, filterable, editable, type, cellRenderer, headerName);
+        return ColumnsEnumUtils.asMap(i18nPrefix, field, sortable, active, filterable, editable, type, cellRenderer);
     }
 
     public static List<Map<String, Object>> allConfigs(String i18nPrefix) {

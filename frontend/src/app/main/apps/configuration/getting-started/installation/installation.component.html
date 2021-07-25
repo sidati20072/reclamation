@@ -1,0 +1,107 @@
+
+<div id="installation" class="page-layout simple fullwidth docs">
+
+    <!-- HEADER -->
+    <div class="header accent p-24" fxLayout="column" fxLayoutAlign="center start">
+
+        <div class="h2 mt-16">Configuration</div>
+
+    </div>
+    <!-- / HEADER -->
+    <mat-tab-group>
+            <mat-tab label="Upload media"> 
+                
+                    <mat-grid-list cols="2" rowHeight="2:1">
+                        <mat-grid-tile>
+                                    <div *ngIf="video" class="widget entreprise-banner" fxFlex="100" fxFlex.gt-sm="66" >
+                                        <mat-video class="content" src="{{mediaUrl}}"></mat-video>
+                                    </div>
+                                    <div *ngIf="!video" class="widget entreprise-banner" fxFlex="100" fxFlex.gt-sm="66" >
+                                        <img class="content" src="{{mediaUrl}}">
+                                    </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <div class="upload" fxFlex="100" fxFlex.gt-sm="28" >
+                            <label  for="file-input">
+                                <img class="img" src="../../../../../assets/up.PNG">
+                            </label>
+                            <input type="file" name="image" 
+                                   (change)="selectedFile($event)"
+                                    id="file-input"/>
+
+                            <div class="submit">
+                                <button mat-button [class.disabled]="!selected"  class="pol-btn" (click)="updateMedia()" >Enregistrer</button>
+                            </div>   
+                            
+                    
+                            <div  >
+                            <h4 *ngIf="selected" class="example-h2">{{fileName}}</h4>
+                            <section *ngIf="submit" class="example-section">
+                                    <mat-progress-bar *ngIf="!uploaded" mode="indeterminate"></mat-progress-bar>
+                                    <mat-progress-bar
+                                                    class="example-margin"
+                                                    [color]="color"
+                                                    [mode]="mode"
+                                                    [value]="100"
+                                                    [bufferValue]="bufferValue"
+                                                    *ngIf="uploaded">
+                                    </mat-progress-bar>
+                                    
+                                 </section>
+                            </div>
+                    </div>
+                        </mat-grid-tile>
+                    </mat-grid-list> 
+            </mat-tab>
+            <mat-tab label="Nombre d'employés"> 
+                    <div class="emp-h emp h2 mb-24">Nombre d'employés par défaut</div>
+                    <mat-form-field class="emp emp-field" appearance="outline"  >
+                    <input matInput type="number" [(ngModel)]="empNumber" >
+                    <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+                    <mat-error>Tapez nombre d'employes..</mat-error>
+                    </mat-form-field>
+            
+            <div class="emp emp-b submit">
+                    <button mat-button [class.disabled]="!empNumber"  class="pol-btn2" (click)="updateEmp()" >Enregistrer</button>
+            </div>  
+            
+            </mat-tab>
+            <mat-tab label="Configuration offline"> 
+
+                    <section class="example-section">
+                            <mat-slide-toggle
+                                class="example-margin"
+                                [color]="colorSlide"
+                                [checked]="isClosed"
+                                (change)="onClosed($event)">
+                            Closed
+                            </mat-slide-toggle>
+                          </section>
+                    
+
+                            <section class="example-section">
+                            <mat-slide-toggle
+                                class="example-margin"
+                                [color]="colorSlide"
+                                [checked]="checked"
+                                [disabled]="disabled"
+                                (change)="onChangeToggle($event)">
+                            Offline!
+                            </mat-slide-toggle>
+                          </section>
+
+                          <div class="txtarea" fxFlex="1 0 auto" fxLayout="row">
+
+                            <mat-form-field appearance="outline" fxFlex="50">
+                                <mat-label>Offline message</mat-label>
+                                <textarea matInput  [(ngModel)]="offlineMessage">
+                                </textarea>
+                            </mat-form-field>
+                    
+                        </div>
+                        <div class="emp emp-b submit">
+                            <button mat-button [class.disabled]="!offlineMessage"  class="pol-btn2" (click)="updateOffline()" >Enregistrer</button>
+                        </div>
+            </mat-tab>
+          </mat-tab-group>
+</div>

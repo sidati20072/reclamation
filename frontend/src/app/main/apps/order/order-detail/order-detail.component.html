@@ -1,0 +1,128 @@
+<div class="header-modal">
+    <mat-label>DÉTAIL DE LA COMMANDE</mat-label>
+</div>
+
+<div class="row div-before-items" *ngFor="let orderLine of order.orderLines">
+    <div class="col-2 div-quantity">
+        <label><span>{{orderLine.quantity}}</span></label>
+    </div>
+    <div class="col-8 div-item">
+        <label>
+            {{orderLine.item.name}}
+        </label>
+        <br>
+        <span>
+            {{orderLine.item.description}}
+        </span>
+    </div>
+    <div class="col-2 orderLine-price">
+        <span>{{orderLine.price.toFixed(2)}} MRU</span>
+    </div>
+</div>
+
+<div class="m-20">
+    <div>
+        <mat-label class="spaces-between">
+            <span>Sous-Total</span>
+            <span>{{(order.price - order.deliveryPrice).toFixed(2)}} MRU</span>
+        </mat-label>
+    </div>
+
+    <div>
+        <mat-label class="spaces-between">
+            <span>Frais de livraison</span>
+            <span>{{order.deliveryPrice.toFixed(2)}} MRU</span>
+        </mat-label>
+    </div>
+
+    <div>
+        <mat-label class="spaces-between">
+            <span>Total</span>
+            <span>{{order.price.toFixed(2)}} MRU</span>
+        </mat-label>
+    </div>
+</div>
+
+<div class="m-20-17">
+    <div class="spaces-between">
+        <mat-label>Resto:</mat-label>
+        <mat-label>{{order.resto.nomResto}}</mat-label>
+    </div>
+
+    <div class="spaces-between mb-15">
+        <mat-label>Addresse Resto:</mat-label>
+        <mat-label *ngIf="order.resto.address.sehdini">{{order.resto.address.sehdini}}</mat-label>
+        <span *ngIf="order.resto.address || order.resto.address.subThoroughfare || order.resto.address.thoroughfare
+     || order.resto.address.locality ">
+                 <span *ngIf="order.resto.address.subThoroughfare">{{order.resto.address.subThoroughfare}},</span>
+                 <span *ngIf="order.resto.address.thoroughfare">{{order.resto.address.thoroughfare}},</span>
+                <span *ngIf="order.resto.address.locality">{{order.resto.address.locality}}</span>
+             </span>
+        <span *ngIf="!order.resto.address || (!order.resto.address.locality && !order.resto.address.thoroughfare && !order.resto.address.subThoroughfare)">
+                 Address non specifiée
+             </span>
+    </div>
+
+    <div class="spaces-between">
+        <mat-label>Client:</mat-label>
+        <mat-label>{{order.client.nom}} {{order.client.prenom}}</mat-label>
+    </div>
+
+    <div class="spaces-between mb-15">
+        <mat-label>Addresse Client:</mat-label>
+        <mat-label *ngIf="order.client.address.sehdini">{{order.client.address.sehdini}}</mat-label>
+        <span *ngIf="order.client.address || order.client.address.subThoroughfare || order.client.address.thoroughfare
+     || order.client.address.locality ">
+                 <span *ngIf="order.client.address.subThoroughfare">{{order.client.address.subThoroughfare}},</span>
+                 <span *ngIf="order.client.address.thoroughfare">{{order.client.address.thoroughfare}},</span>
+                <span *ngIf="order.client.address.locality">{{order.client.address.locality}}</span>
+             </span>
+        <span *ngIf="!order.client.address || (!order.client.address.locality && !order.client.address.thoroughfare && !order.client.address.subThoroughfare)">
+                 Address non specifiée
+             </span>
+    </div>
+
+    <div class="spaces-between mb-15">
+        <mat-label class="m-auto-0">Livreur</mat-label>
+        <mat-form-field class="w-100px">
+        <mat-select [(value)]="selectedDlvUser">
+            <mat-option *ngFor="let dlvUser of deliveryUsers" [value]="dlvUser.id">
+                {{dlvUser.nom}} {{dlvUser.prenom}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="spaces-between mb-15">
+        <mat-label class="m-auto-0">Etat</mat-label>
+        <mat-form-field class="w-100px">
+        <mat-select [(value)]="selectedOrderStatus">
+            <mat-option [value]="etatOrder.ACCEPTED">
+                {{etatOrder.ACCEPTED}}
+            </mat-option>
+            <mat-option [value]="etatOrder.DELIVRED">
+                {{etatOrder.DELIVRED}}
+            </mat-option>
+            <mat-option [value]="etatOrder.WAITING">
+                {{etatOrder.WAITING}}
+            </mat-option>
+            <mat-option [value]="etatOrder.CANCELED">
+                {{etatOrder.CANCELED}}
+            </mat-option>
+            <mat-option [value]="etatOrder.FINISHED">
+                {{etatOrder.FINISHED}}
+            </mat-option>
+            <mat-option [value]="etatOrder.REFUSED">
+                {{etatOrder.REFUSED}}
+            </mat-option>
+            <mat-option [value]="etatOrder.REVIEWED">
+                {{etatOrder.REVIEWED}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<div mat-dialog-actions class="justify-content-center">
+    <button mat-button (click)="onNoClick()">Annuler</button>
+    <button mat-button cdkFocusInitial (click)="postActions()">Modifer</button>
+</div>
