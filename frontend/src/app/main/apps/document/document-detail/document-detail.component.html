@@ -1,0 +1,31 @@
+<div class="content">
+
+    <div class="header">
+        Détail du document : {{document.number}}
+    </div>
+
+
+    <div class="ct">
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">description</mat-icon>
+            <span class="logo-text">Titre foncier: {{document.titreFoncier}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">receipt_long</mat-icon>
+            <span class="logo-text">Permis: {{document.permis}}</span>
+        </div>
+
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">note_add</mat-icon>
+            <span class="logo-text">Acte: {{document.acte}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">receipt</mat-icon>
+            <span class="logo-text">Quittance: {{document.quittance}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">meeting_room</mat-icon>
+            <span class="logo-text">Actuellement dans service: {{document?.serviceActually?.name}}</span>
+        </div>
+    </div>
+</div>

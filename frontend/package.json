@@ -69,6 +69,7 @@
     "ngx-color-picker": "7.3.0",
     "ngx-cookie-service": "2.1.0",
     "ngx-editor": "4.1.0",
+    "ngx-print": "^1.2.1",
     "ngx-progressbar": "2.1.1",
     "ngx-spinner": "7.1.2",
     "ngx-ui-loader": "7.2.2",

@@ -1,8 +1,11 @@
+.gradle/
 /target/
 !.mvn/wrapper/maven-wrapper.jar
+.attach_pid11660
+backend/out/
+backend/out/
 
 .gradle/
-gradle/
 .gradle/
 ### STS ###
 .apt_generated

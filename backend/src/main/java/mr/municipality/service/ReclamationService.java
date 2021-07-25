@@ -1,23 +1,13 @@
 package mr.municipality.service;
 
-import mr.municipality.Model.GenericData;
-import mr.municipality.dao.ReclamationRepository;
-import mr.municipality.entities.Document;
-import mr.municipality.entities.Reclamation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.transaction.Transactional;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 @Transactional
 public class ReclamationService {
-    @Autowired
+/*    @Autowired
     private ReclamationRepository reclamationRepository;
     @Autowired
     StorageService storageService;
@@ -60,5 +50,5 @@ public class ReclamationService {
             reclamation.getDocuments().addAll(documents);
         }
         return reclamationRepository.save(reclamation);
-    }
+    }*/
 }

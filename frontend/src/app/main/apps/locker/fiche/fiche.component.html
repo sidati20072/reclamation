@@ -1,0 +1,47 @@
+<div class="content" id="print-section">
+
+    <div class="header">
+        Fiche {{data.type}}
+    </div>
+
+    <div class="ct">
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">confirmation_number</mat-icon>
+            <span class="logo-text">Numéro du document: {{document.number}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">description</mat-icon>
+            <span class="logo-text">Titre foncier: {{document.titreFoncier}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">receipt_long</mat-icon>
+            <span class="logo-text">Permis: {{document.permis}}</span>
+        </div>
+
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">note_add</mat-icon>
+            <span class="logo-text">Acte: {{document.acte}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">receipt</mat-icon>
+            <span class="logo-text">Quittance: {{document.quittance}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">meeting_room</mat-icon>
+            <span class="logo-text">Actuellement dans service: {{document.serviceActually.name}}</span>
+        </div>
+
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">today</mat-icon>
+            <span class="logo-text">Date {{data.type}} : {{document.mouvementDate | date: 'short'}}</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon class="icon mr-16">list_alt</mat-icon>
+            <span class="logo-text">Order: {{document.order}}</span>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <button   [useExistingCss]="true"
+              printSectionId="print-section" ngxPrint>print</button>
+</div>

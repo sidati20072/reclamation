@@ -20,13 +20,18 @@ import {FuseSharedModule} from '../../@fuse/shared.module';
 import {FuseSidebarModule} from '../../@fuse/components';
 import { IdRendererComponent } from './renderer/id-renderer/id-renderer.component';
 import { DocRendererComponent } from './renderer/doc-renderer/doc-renderer.component';
+import { BlockStatusComponent } from './renderer/block-status/block-status.component';
+import {ShowDocumentComponent} from '../main/apps/locker/show-document/show-document.component';
+import {PdfViewerModule} from 'ng2-pdf-viewer';
 
 @NgModule({
     declarations: [
         RoleRendererComponent,
         HeaderButtonsComponent,
         IdRendererComponent,
-        DocRendererComponent
+        DocRendererComponent,
+        BlockStatusComponent,
+        ShowDocumentComponent
     ],
     imports: [
         CommonModule,
@@ -51,6 +56,8 @@ import { DocRendererComponent } from './renderer/doc-renderer/doc-renderer.compo
         MatSlideToggleModule,
         MatGridListModule,
         MatProgressSpinnerModule,
+        PdfViewerModule,
+
     ],
     exports: [
         RoleRendererComponent,
@@ -77,13 +84,16 @@ import { DocRendererComponent } from './renderer/doc-renderer/doc-renderer.compo
         MatGridListModule,
         MatProgressSpinnerModule,
         IdRendererComponent,
-        DocRendererComponent
+        DocRendererComponent,
+        PdfViewerModule,
+
     ],
     entryComponents: [
         RoleRendererComponent,
         HeaderButtonsComponent,
         IdRendererComponent,
-        DocRendererComponent
+        DocRendererComponent,
+        ShowDocumentComponent
     ]
 })
 export class SharedModule {

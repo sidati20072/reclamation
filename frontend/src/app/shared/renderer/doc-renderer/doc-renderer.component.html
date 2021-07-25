@@ -1,1 +1,2 @@
-<p> {{this.params.data?.documents?.length}}</p>
+<span *ngIf="params.value === 'IN'" [class]="params.value"> Disponible</span>
+<span *ngIf="params.value === 'OUT'" [class]="params.value"> Indisponible</span>

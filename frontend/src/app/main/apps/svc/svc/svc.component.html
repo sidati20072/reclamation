@@ -1,0 +1,39 @@
+<div id="contacts" class="page-layout simple left-sidebar inner-sidebar inner-scroll">
+    <!-- HEADER -->
+    <div class="header accent p-16 p-sm-24" fxLayout="column" fxLayoutAlign="start"
+         fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center">
+
+        <!-- APP TITLE -->
+        <div fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-icon-button class="sidebar-toggle mr-12" fxHide.gt-sm
+            >
+                <mat-icon>menu</mat-icon>
+            </button>
+
+            <div class="logo" fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon class="logo-icon mr-16"
+                          [@animate]="{value:'*',params:{delay:'50ms',scale:'0.2'}}">account_box
+                </mat-icon>
+                <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                    Service
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="table-container table-display">
+
+        <ag-grid-angular *ngIf="gridOptions" class="ag-theme-alpine"
+                         [gridOptions]="gridOptions"
+                         (selectionChanged)="onSelectionChanged($event)"
+                         (gridReady)="onGridReady($event)"
+                         [rowData]="gridOptions?.rowData"
+                         [columnDefs]="columnDefs"
+        >
+        </ag-grid-angular>
+
+    </div>
+</div>
+

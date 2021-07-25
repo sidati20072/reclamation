@@ -1,0 +1,10 @@
+<div>
+  <ag-grid-angular *ngIf="gridOptions" class="ag-theme-alpine"
+                   [gridOptions]="gridOptions"
+                   (selectionChanged)="onSelectionChanged($event)"
+                   (gridReady)="onGridReady($event)"
+                   [rowData]="gridOptions?.rowData"
+                   [columnDefs]="columnDefs"
+  >
+  </ag-grid-angular>
+</div>

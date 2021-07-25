@@ -16,6 +16,7 @@ public class ColumnsEnumUtils {
         map.put("editable", params[index + 4]);
         map.put("type", params[index + 5]);
         map.put("cellRenderer", params.length > 6 ? params[index + 6] : "");
+        map.put("headerName",params[index + 7]);
 
         return map;
     }

@@ -1,0 +1,39 @@
+<div class="dialog-content-wrapper">
+  <mat-toolbar matDialogTitle class="mat-accent m-0">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+      <span class="title dialog-title">{{dialogTitle}}</span>
+      <button mat-icon-button (click)="matDialogRef.close()" aria-label="Close dialog">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div mat-dialog-content class="p-24 pb-0 m-0" fusePerfectScrollbar>
+    <form>
+      <div fxLayout="row" fxLayoutAlign="start start">
+        <mat-form-field appearance="outline" fxFlex>
+          <mat-label>Note</mat-label>
+          <textarea name="note" [(ngModel)]="note" matInput ></textarea>
+        </mat-form-field>
+      </div>
+
+      <div  fxLayout="row" fxLayoutAlign="start start">
+        <mat-form-field appearance="outline" fxFlex>
+          <mat-label>Type</mat-label>
+          <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+          <mat-select [(ngModel)]="selectedService" name="type" readonly="true">
+            <mat-option *ngFor="let svc of services" [value]="svc.id">{{svc.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions class="m-0 p-16" fxLayout="row" fxLayoutAlign="end center">
+    <button
+            class="save-button"
+            (click)="save()">
+      Enregistrer
+    </button>
+
+  </div>
+</div>
