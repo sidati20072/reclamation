@@ -1,0 +1,38 @@
+<div id="contacts" class="page-layout simple left-sidebar inner-sidebar inner-scroll">
+    <!-- HEADER -->
+    <div class="header accent p-16 p-sm-24" fxLayout="column" fxLayoutAlign="start"
+         fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center">
+
+        <!-- APP TITLE -->
+        <div style="width:100%; justify-content: space-around;" class="space-around">
+
+                <span class="logo-text h1" >
+                    Salle
+                </span>
+                <span *ngIf="selectedRoom" class="logo-text h1" >
+                    Armoire
+                </span>
+
+        </div>
+    </div>
+    <div>
+
+        <div class="table-container table-display">
+
+            <div [class.table-container]="!selectedRoom" [class.table-resized]="selectedRoom">
+                <ag-grid-angular *ngIf="gridOptions" class="ag-theme-alpine"
+                                 [gridOptions]="gridOptions"
+                                 (selectionChanged)="onSelectionChanged($event)"
+                                 (gridReady)="onGridReady($event)"
+                                 [rowData]="gridOptions?.rowData"
+                                 [columnDefs]="columnDefs"
+                >
+                </ag-grid-angular>
+            </div>
+
+            <div class="right-tab" *ngIf="selectedRoom && selectedRoom.id" [class.fade-in-detail]="selectedRoom?.id" >
+                <app-cupboard [roomId]="selectedRoom.id"></app-cupboard>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,11 @@
 package mr.municipality.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -17,6 +16,7 @@ import java.util.Objects;
 @ToString
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor
 @Entity(name = "user")
 public class User {
 
@@ -30,15 +30,13 @@ public class User {
     private String email;
     private String nom;
     private String prenom;
-    private Date createdAt;
+    @CreationTimestamp
+    private LocalDateTime createdAt;
+    @CreationTimestamp
+    private LocalDateTime updatedAt;
     @ManyToMany(fetch = FetchType.EAGER)
     @RestResource(exported = false)
     private Collection<Role> roles = new ArrayList<>();
-
-
-    public User() {
-        this.createdAt = new Date();
-    }
 
 
     @Override

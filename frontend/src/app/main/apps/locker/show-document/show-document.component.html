@@ -1,0 +1,9 @@
+<div class="content">
+    <pdf-viewer
+            [src]="selectedDoc"
+            (on-progress)="showLoadingMsg()"
+            (page-rendered)="pdfRendered()"
+            (error)="showErrorMsg()"
+            [original-size]="false"
+    ></pdf-viewer>
+</div>

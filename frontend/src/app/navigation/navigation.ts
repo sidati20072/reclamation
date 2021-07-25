@@ -1,4 +1,4 @@
-import { FuseNavigation } from '@fuse/types';
+import {FuseNavigation} from '@fuse/types';
 
 export const navigation: FuseNavigation[] = [
     {
@@ -8,11 +8,11 @@ export const navigation: FuseNavigation[] = [
         icon: 'apps',
         children: [
             {
-                id: 'reclamations',
-                title: 'Reclamations',
+                id: 'rooms',
+                title: 'Gérer vos documents',
                 type: 'item',
                 icon: 'account_box',
-                url: '/apps/reclamations'
+                url: '/apps/rooms'
             },
             {
                 id: 'contacts',
@@ -20,6 +20,20 @@ export const navigation: FuseNavigation[] = [
                 type: 'item',
                 icon: 'account_box',
                 url: '/apps/utilisateur'
+            },
+            {
+                id: 'svc',
+                title: 'Service',
+                type: 'item',
+                icon: 'account_box',
+                url: '/apps/service'
+            },
+            {
+                id: 'document',
+                title: 'Document',
+                type: 'item',
+                icon: 'folder',
+                url: '/apps/documents'
             },
 
 

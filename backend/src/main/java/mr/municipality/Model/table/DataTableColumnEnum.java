@@ -15,15 +15,81 @@ public enum DataTableColumnEnum {
             return "user-view";
         }
     },
-    RECLAMATION_VIEW {
+    ROOM_VIEW {
         @Override
         public List<Map<String, Object>> getColumnsList() {
-            return ReclamationColumnsEnum.allConfigs("");
+            return RoomColumnsEnum.allConfigs("");
         }
 
         @Override
         public String getValue() {
-            return "reclamation-view";
+            return "room-view";
+        }
+    },
+    CUPBOARD_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return CupboardColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "cupboard-view";
+        }
+    },
+    LOCKER_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return LockerColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "locker-view";
+        }
+    },
+    BOITIER_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return BoitierColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "boitier-view";
+        }
+    },
+    SVC_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return SvcColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "svc-view";
+        }
+    },
+    DOCUMENT_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return DocumentColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "document-view";
+        }
+    },
+    DOCUMENT_LIST_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return DocumentListColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "document-list-view";
         }
     };
 

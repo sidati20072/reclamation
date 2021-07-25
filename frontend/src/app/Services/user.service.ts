@@ -1,18 +1,17 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 import {environment} from '../../environments/environment';
-import {Roles} from '../models/Roles';
 import {UserModel} from '../models/UserModel';
 import {AuthService} from './auth.service';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class UserService {
+    currentUser: UserModel;
     private usersUrl = environment.url + 'users/all';
     private usersByRoleUrl = environment.url + 'users/role/';
-    private searchUserUrl = environment.url + 'users/search/findByUsername?username=';
-    currentUser: UserModel;
+    private searchUserUrl = environment.url + 'users/';
 
     constructor(private http: HttpClient, private authService: AuthService) {
         this.authService.isLogout.subscribe(() => this.currentUser = null);
@@ -20,10 +19,6 @@ export class UserService {
 
     getAllUsers() {
         return this.http.get(this.usersUrl);
-    }
-
-    getDeliveryUsers() {
-        return this.http.get(`${this.usersByRoleUrl}${Roles.LIVREUR}`);
     }
 
     getUserByUsername(userName) {

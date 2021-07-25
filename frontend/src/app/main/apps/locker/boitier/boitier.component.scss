@@ -1,0 +1,23 @@
+
+ag-grid-angular{
+  width: 100%;
+  height: calc(100vh - 220px)
+}
+
+
+.table-display {
+  display: flex;
+  justify-content: space-between;
+
+  .table-resized {
+    width: 20%;
+  }
+}
+
+.table-container {
+  width: 100%;
+}
+
+.right-tab{
+  width: 78%;
+}

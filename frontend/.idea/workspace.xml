@@ -2,12 +2,191 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/BoitierColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/CupboardColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DocumentColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DocumentListColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/LockerColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/RoomColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/SvcColumnsEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/BoitierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/LockerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/RoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/SvcRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Boitier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Cupboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Locker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/BoitierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/CupboardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/LockerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/RoomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/SvcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/BoitierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/CupboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/LockerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/resources/application-local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-cupboard/add-cupboard.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-cupboard/add-cupboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/room/boitier.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/svc/svc.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/main/apps/svc/svc.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/GlobalRepositoryRestConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/ColumnsEnumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/ColumnsEnumUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/Enum/DocumentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/GenericData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/GenericData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/UserColumnsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/UserColumnsEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/DocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/DocumentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/ReclamationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/CupboardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthentificationFiltre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthentificationFiltre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthorizationFiltre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/JWTAuthorizationFiltre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/MailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/sec/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/DocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/DocumentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/ReclamationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/ReclamationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/StorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/StorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/DocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/DocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/ReclamationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UploadFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UploadFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application-docker.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/test/java/mr/municipality/UserServiceApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/apps.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/apps.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/add-category/add-category.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/categories.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/categories/categories.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category-details/category-details.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/category.theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/edit-category/edit-category.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/category/media.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/documentation.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/alert/alert.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/getting-started.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/installation/installation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/introduction/introduction.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/configuration/getting-started/presentation/presentation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/add-item/add-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/item.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/item.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/item/select-category/select-category.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/dialogs/compose/compose.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/i18n/en.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/i18n/tr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-details/mail-details.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list-item/mail-list-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail-list/mail-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/mail.theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/mail/sidebars/main/main-sidebar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-detail/order-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order-list/order-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-cupboard/add-cupboard.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/order/order.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation-docs/add-reclamation-docs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/detail-reclamation/detail-reclamation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/reclamation.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/room/room.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/Static.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/Static.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navigation/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navigation/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +197,377 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/document-list/document-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="184" column="29" lean-forward="true" selection-start-line="182" selection-start-column="28" selection-end-line="184" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/document.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+              <folding>
+                <element signature="n#div#4;n#div#1;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/shared/shared.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/apps.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hmr.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="1" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ncin</find>
+      <find>urlReclamations</find>
+      <find>categ</find>
+      <find>mail</find>
+      <find>selectedRoom</find>
+      <find>isAdmin</find>
+      <find>findByUse</find>
+      <find>reclamationService</find>
+      <find>lockers/</find>
+      <find>&lt;mat-label&gt;Note&lt;/mat-label&gt;</find>
+      <find>private Integer</find>
+      <find>login</find>
+      <find>room</find>
+      <find>docu</find>
+      <find>Commune Tevragh Zeina</find>
+      <find>onExpo</find>
+      <find>on²</find>
+      <find>onExport</find>
+      <find>disa</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/app/main/ui</dir>
+      <dir>$PROJECT_DIR$/src/app/main</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/boitier.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/locker.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/boitier/boitier.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/service/svc.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/service/svc.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/svc.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/add-svc/add-svc.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/add-cupboard/add-cupboard.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/add-locker/add-locker.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/add-boitier/add-boitier.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/svc/svc.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/add-svc/add-svc.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/svc.service.ts" />
+        <option value="$PROJECT_DIR$/src/styles.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/svc/svc/svc.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.html" />
+        <option value="$PROJECT_DIR$/src/app/models/Static.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/pages/authentication/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/document.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/show-document/show-document.component.html" />
+        <option value="$PROJECT_DIR$/src/app/layout/components/navbar/vertical/style-1/style-1.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/room.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/locker.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.html" />
+        <option value="$PROJECT_DIR$/src/app/navigation/navigation.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/room.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/locker.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/cupboard/cupboard.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/move-document/move-document.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/move-document/move-document.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/document.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/room.model.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.scss" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/apps.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/document-list/document-list.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.html" />
+        <option value="$PROJECT_DIR$/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.html" />
+        <option value="$PROJECT_DIR$/src/app/main/apps/room/room.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
+  </component>
   <component name="ProjectId" id="1iKeoAprMimv186j5qF4iJct924" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+              <item name="document-detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+              <item name="show-document" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="locker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="locker" type="462c0819:PsiDirectoryNode" />
+              <item name="document-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="locker" type="462c0819:PsiDirectoryNode" />
+              <item name="fiche" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="add-reclamation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="add-reclamation-docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
+              <item name="cupboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,6 +585,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/main/apps/service" />
+      <recent name="$PROJECT_DIR$/src/app/main/apps/room" />
       <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation" />
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
@@ -159,8 +701,59 @@
       <workItem from="1618612528149" duration="678000" />
       <workItem from="1619825068105" duration="48000" />
       <workItem from="1620422588988" duration="4578000" />
+      <workItem from="1625312543103" duration="20929000" />
+      <workItem from="1625415431278" duration="6585000" />
+      <workItem from="1626467568457" duration="9093000" />
+      <workItem from="1626605924374" duration="14421000" />
+      <workItem from="1626682972483" duration="5000" />
+      <workItem from="1626954552377" duration="870000" />
+      <workItem from="1627122646283" duration="648000" />
+      <workItem from="1627208581136" duration="15742000" />
+      <workItem from="1627241477189" duration="2965000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="71258000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26307365" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40503672" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="GraphQL" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37565583" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="bottom" id="RNConsole" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" x="0" y="0" width="430" height="882" id="Documentation" order="10" side_tool="true" weight="0.32977587" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -171,6 +764,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -191,6 +790,442 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/main/apps/room/room.component.ts</url>
+          <line>55</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/add-locker/add-locker.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/add-locker/add-locker.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/svc/add-svc/add-svc.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/svc/svc/svc.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/svc/svc.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/cupboard/cupboard.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/svc/add-svc/add-svc.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/svc/svc/svc.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/doc-renderer/doc-renderer.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/renderer/block-status/block-status.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="1071" column="29" selection-start-line="1071" selection-start-column="29" selection-end-line="1071" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/models/Static.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/@fuse/types/fuse-navigation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/show-document/show-document.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/boitier/boitier.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/show-document/show-document.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/locker.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/navigation/navigation.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" column="23" selection-start-line="32" selection-end-line="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="71" selection-start-line="53" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/add-reclamation-docs/add-reclamation-docs.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/add-reclamation/add-reclamation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/document-list/document-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/move-document/move-document.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/move-document/move-document.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/apps.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hmr.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/document.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/fiche/fiche.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#4;n#div#1;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/locker/document-list/document-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="184" column="29" lean-forward="true" selection-start-line="182" selection-start-column="28" selection-end-line="184" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/show-document/show-document-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/document/document-detail/document-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/main/apps/room/room.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
