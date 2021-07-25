@@ -1,0 +1,128 @@
+<div id="contacts" class="page-layout simple left-sidebar inner-sidebar inner-scroll">
+  <div class="header accent p-16 p-sm-24" fxLayout="column" fxLayoutAlign="start"
+       fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center">
+
+    <div fxLayout="row" fxLayoutAlign="start center">
+
+      <button mat-icon-button class="sidebar-toggle mr-12" fxHide.gt-sm
+              (click)="toggleSidebar('contacts-main-sidebar')">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="logo" fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon class="logo-icon mr-16">account_box
+        </mat-icon>
+        <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
+                    Article
+                </span>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="content">
+
+    <fuse-sidebar class="sidebar" name="contacts-main-sidebar" position="left" lockedOpen="gt-sm">
+      <div class="content" fusePerfectScrollbar>
+
+        controlled
+      </div>
+
+    </fuse-sidebar>
+    <mat-spinner *ngIf="showSpinner" color="accent" diameter="50" strokeWidth="5"></mat-spinner>
+
+    <div class="center p-24 pb-56 pr-sm-92" fusePerfectScrollbar>
+      <div class="content p-12">
+        <mat-form-field>
+          <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+
+        <div class="mat-elevation-z8 p-12">
+          <table mat-table [dataSource]="dataSource">
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> Id</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> name</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="description">
+              <th mat-header-cell *matHeaderCellDef> Description</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.description }} </td>
+            </ng-container>
+            <ng-container matColumnDef="prix">
+              <th mat-header-cell *matHeaderCellDef> Prix</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element?.price?.toFixed(2)}} </td>
+            </ng-container>
+            <ng-container matColumnDef="category">
+              <th mat-header-cell *matHeaderCellDef> Category</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.category?.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="resto">
+              <th mat-header-cell *matHeaderCellDef> Resto</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.resto?.nomResto}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="reduction">
+              <th mat-header-cell *matHeaderCellDef> Reduction</th>
+              <td mat-cell  [class]='element.promo' *matCellDef="let element"> {{element.reduction}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="promo">
+              <th mat-header-cell *matHeaderCellDef> Promo </th>
+              <td  [class]='element.promo' mat-cell *matCellDef="let element">
+                <mat-icon *ngIf="element.promo" class="done">done</mat-icon>
+                <mat-icon *ngIf="!element.promo" class="close">close</mat-icon>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+              <td  [class]='element.promo' mat-cell *matCellDef="let element">
+                <button mat-icon-button [matMenuTriggerFor]="menu" >
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item (click)="showEditItem(element)">
+                    <mat-icon>edit</mat-icon>
+                    <span>Modifier</span>
+                  </button>
+                  <button mat-menu-item (click)="deleteItem(element.id)">
+                    <mat-icon>delete</mat-icon>
+                    <span>Supprimer</span>
+                  </button>
+                </mat-menu>
+            </td>
+            </ng-container>
+            <!-- Weight Column -->
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+          <mat-paginator [length]="100"
+                         [pageSize]="10"
+                         [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<button mat-fab class="accent" id="add-item-btn" (click)="showAddItem()" aria-label="add contact"
+        [@animate]="{value:'*', params:{delay:'300ms',scale:'.2'}}">
+  <mat-icon>person_add</mat-icon>
+</button>

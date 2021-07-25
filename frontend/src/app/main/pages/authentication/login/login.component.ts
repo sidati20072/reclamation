@@ -77,7 +77,7 @@ export class LoginComponent implements OnInit {
                 // this.handleResponse(result.headers.get('authorization'));
                 this.authService.saveToken(result.headers.get('authorization'));
                 this.authService.isAdmin() || this.authService.isClient() ?
-                    this.router.navigateByUrl('/apps/documents') : this.authService.logout();
+                    this.router.navigateByUrl('/apps/contacts') : this.authService.logout();
                 // Get default navigation
                 this.navigation = this.authService.isAdmin() ? navigation : managerNavigation;
                 if (this.authService.isAdmin()) {

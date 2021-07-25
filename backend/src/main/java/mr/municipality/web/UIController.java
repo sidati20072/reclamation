@@ -1,7 +1,7 @@
 package mr.municipality.web;
 
-import mr.municipality.Model.table.DataTableColumnEnum;
 import org.springframework.web.bind.annotation.*;
+import mr.municipality.Model.table.DataTableColumnEnum;
 
 import java.util.Collections;
 import java.util.List;

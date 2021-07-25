@@ -1,0 +1,48 @@
+<div class="dialog-content-wrapper">
+  <mat-toolbar matDialogTitle class="mat-accent m-0">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+      <span class="title dialog-title">{{dialogTitle}}</span>
+      <button mat-icon-button (click)="matDialogRef.close()" aria-label="Close dialog">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div mat-dialog-content class="p-24 pb-0 m-0" fusePerfectScrollbar>
+
+    <form>
+
+      <div  fxLayout="row" fxLayoutAlign="start start">
+
+        <label class="btn btn-default">
+          <input type="file" multiple (change)="selectFiles($event)" />
+        </label>
+
+      </div>
+      <div  fxLayout="row" fxLayoutAlign="start start">
+        <mat-form-field appearance="outline" fxFlex>
+          <mat-label>Type</mat-label>
+          <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+          <mat-select [(ngModel)]="type" name="type">
+            <mat-option value="AVIS">Avis</mat-option>
+            <mat-option value="FEUILLE">Feuille d'instruction</mat-option>
+            <mat-option value="DEMANDE">Demande</mat-option>
+            <mat-option value="FICHE">Fiche</mat-option>
+            <mat-option value="AUTRE">autre</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+
+  <div mat-dialog-actions class="m-0 p-16" fxLayout="row" fxLayoutAlign="end center">
+
+    <button
+            class="save-button"
+            [disabled]="!selectedFiles"
+            (click)="upload()">
+      Upload
+    </button>
+
+  </div>
+</div>

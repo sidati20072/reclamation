@@ -20,7 +20,6 @@ import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.UUID;
 
-
 @Service
 @Slf4j
 public class StorageService {
