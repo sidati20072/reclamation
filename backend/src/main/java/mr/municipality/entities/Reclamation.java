@@ -30,7 +30,7 @@ public class Reclamation {
     private String nom;
     private String degrevement;
     private Date createdAt;
-    private LocalDate date;
+    private String date;
     @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)
     private List<Document> Documents = new ArrayList<>();
