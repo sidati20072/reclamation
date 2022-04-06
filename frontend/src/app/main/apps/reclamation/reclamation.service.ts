@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../../environments/environment';
 import {ReclamationModel} from './reclamation.model';
+
 @Injectable({
     providedIn: 'root'
 })
@@ -9,6 +10,7 @@ export class ReclamationService {
     private urlReclamations = environment.url + 'reclamations';
     private documentDownUrl = environment.url + 'documents/downloadRessource/';
     private documentUrl = environment.url + 'documents/';
+    private urlPaymentLine = environment.url + 'paymentLine/';
 
     constructor(
         private _httpClient: HttpClient
@@ -17,6 +19,10 @@ export class ReclamationService {
 
     getReclamations() {
         return this._httpClient.get(this.urlReclamations);
+    }
+
+    getPaymentLineByReclamation(id) {
+        return this._httpClient.get(`${this.urlPaymentLine}reclamation/${id}`);
     }
 
     save(reclamation: ReclamationModel) {
@@ -48,5 +54,13 @@ export class ReclamationService {
 
     deleteDocument(id) {
         return this._httpClient.delete(this.documentUrl + id);
+    }
+
+    deletePaymentLine(id) {
+        return this._httpClient.delete(this.urlPaymentLine + id);
+    }
+
+    savePaymentLine(id, value: any) {
+        return this._httpClient.post(`${this.urlPaymentLine}${id}`, value);
     }
 }

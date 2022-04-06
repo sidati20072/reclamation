@@ -13,6 +13,8 @@ import {AddReclamationComponent} from './add-reclamation/add-reclamation.compone
 import {AddReclamationDocsComponent} from './add-reclamation-docs/add-reclamation-docs.component';
 import {IdRendererComponent} from '../../../shared/renderer/id-renderer/id-renderer.component';
 import {DocRendererComponent} from '../../../shared/renderer/doc-renderer/doc-renderer.component';
+import {AddPaymentLineComponent} from './add-payment-line/add-payment-line.component';
+
 @Component({
     selector: 'app-reclamation',
     templateUrl: './reclamation.component.html',
@@ -129,6 +131,26 @@ export class ReclamationComponent implements OnInit {
                             disabled: () => {
                                 this.selectedReclamation == null;
                             }
+                        },
+                        {
+                            title: 'Payment',
+                            icon: 'credit_card',
+                            fn: () => {
+                                this.paymentLine();
+                            },
+                            disabled: () => {
+                                this.selectedReclamation == null;
+                            }
+                        },
+                        {
+                            title: 'List Payments',
+                            icon: 'list',
+                            fn: () => {
+                                this.route.navigate(['/apps/reclamations/account/' + this.selectedReclamation.id]);
+                            },
+                            disabled: () => {
+                                this.selectedReclamation == null;
+                            }
                         }, {
                             title: 'delete',
                             icon: 'delete',
@@ -186,30 +208,40 @@ export class ReclamationComponent implements OnInit {
     onExport() {
         const params = {
             columnSeparator: ';'
-        }
+        };
         this.gridApi.exportDataAsCsv(params);
     }
 
     getColumns(columns: any[]) {
         return columns.map(value => {
-            if (value.field === 'lot'){
+            if (value.field === 'lot') {
                 value.headerName = 'Num dossier';
                 value.header = 'Num dossier';
                 return value;
-            }else if (value.field === 'total'){
+            } else if (value.field === 'total') {
                 value.headerName = 'Montant';
                 value.header = 'Montant';
                 return value;
-            }
-            else if (value.field === 'ncin'){
+            } else if (value.field === 'ncin') {
                 value.headerName = 'Address';
                 value.header = 'Address';
                 return value;
-            }
-            else {
+            } else {
                 return value;
             }
         });
     }
 
+    private paymentLine() {
+        this.dialogRef = this._matDialog.open(AddPaymentLineComponent, {
+            panelClass: 'contact-form-dialog',
+            data: {
+                action: 'new',
+                id: this.selectedReclamation.id
+            }
+        });
+        this.dialogRef.afterClosed().subscribe(response => {
+            this.initTableData();
+        });
+    }
 }

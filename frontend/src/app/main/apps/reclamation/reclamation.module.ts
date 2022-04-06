@@ -13,6 +13,8 @@ import {IdRendererComponent} from '../../../shared/renderer/id-renderer/id-rende
 import {DocRendererComponent} from '../../../shared/renderer/doc-renderer/doc-renderer.component';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import {MatDatepickerModule} from '@angular/material';
+import {PaymentLineComponent} from './payment-line/payment-line.component';
+import { AddPaymentLineComponent } from './add-payment-line/add-payment-line.component';
 
 const routes: Routes = [
     {
@@ -24,13 +26,17 @@ const routes: Routes = [
         component: DetailReclamationComponent,
     },
     {
+        path: 'account/:id',
+        component: PaymentLineComponent,
+    },
+    {
         path: '**',
         redirectTo: ''
     }
 ];
 
 @NgModule({
-    declarations: [ReclamationComponent, AddReclamationComponent, AddReclamationDocsComponent, DetailReclamationComponent],
+    declarations: [ReclamationComponent, AddReclamationComponent, AddReclamationDocsComponent, DetailReclamationComponent, PaymentLineComponent, AddPaymentLineComponent],
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
@@ -39,11 +45,11 @@ const routes: Routes = [
         PdfViewerModule,
         MatDatepickerModule
     ],
-    entryComponents: [AddReclamationComponent, AddReclamationDocsComponent],
+    entryComponents: [AddReclamationComponent, AddReclamationDocsComponent,AddPaymentLineComponent],
     providers: [
         ContactsService,
         ReclamationService,
-        DatePipe
+        DatePipe,
     ],
 })
 export class ReclamationModule {
