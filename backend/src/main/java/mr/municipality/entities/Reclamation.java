@@ -26,6 +26,7 @@ public class Reclamation {
     private String lot;
     private String etat;
     private Float total;
+    private Float paid;
     private String ncin;
     private String nom;
     private String degrevement;

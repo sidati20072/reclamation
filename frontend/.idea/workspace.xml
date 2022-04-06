@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/PaymentLineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/PaymentLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/BadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/NotImplementedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/UserNotActiveException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/PaymentLineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/PaymentLineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/Static.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/Static.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +41,15 @@
   </component>
   <component name="ProjectId" id="1iKeoAprMimv186j5qF4iJct924" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -54,19 +71,18 @@
       <recent name="$PROJECT_DIR$/src/app/main/apps/reclamation.module.ts" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="npm.build-prod">
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -105,6 +121,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -159,20 +176,26 @@
       <workItem from="1618612528149" duration="678000" />
       <workItem from="1619825068105" duration="48000" />
       <workItem from="1620422588988" duration="4578000" />
+      <workItem from="1635889232595" duration="1313000" />
+      <workItem from="1635975659742" duration="606000" />
+      <workItem from="1636888679942" duration="159000" />
+      <workItem from="1636889690169" duration="1232000" />
+      <workItem from="1647468105182" duration="625000" />
+      <workItem from="1649150936374" duration="694000" />
+      <workItem from="1649151771124" duration="12000" />
+      <workItem from="1649200831542" duration="4263000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -191,6 +214,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="masterDetails">
     <states>
