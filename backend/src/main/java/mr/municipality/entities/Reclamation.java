@@ -32,6 +32,7 @@ public class Reclamation {
     private String degrevement;
     private Date createdAt;
     private String date;
+    private String role;
     @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)
     private List<Document> Documents = new ArrayList<>();
