@@ -14,6 +14,7 @@ export class ReclamationModel {
     total: number;
     ncin: string;
     nom: string;
+    role: string;
     degrevement: string;
     documents: DocumentModel[];
 }

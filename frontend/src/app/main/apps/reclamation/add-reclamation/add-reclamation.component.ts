@@ -38,6 +38,7 @@ export class AddReclamationComponent {
             ncin: [this.reclamation.ncin || '', Validators.required],
             total: [this.reclamation.total || '', Validators.required],
             etat: [this.reclamation.etat || ''],
+            role: [this.reclamation.role || ''],
             nom: [this.reclamation.nom || ''],
             date: [this.reclamation.nom || new Date()],
             degrevement: [this.reclamation.degrevement || '']

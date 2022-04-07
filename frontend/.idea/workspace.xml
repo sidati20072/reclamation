@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c56989f-3e5d-4f67-8a18-0375b3e781a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/dao/PaymentLineRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/PaymentLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/BadRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/NotImplementedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/exception/UserNotActiveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/service/PaymentLineService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/web/PaymentLineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/DataTableColumnEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/entities/Reclamation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/ReclamationColumnsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/mr/municipality/Model/table/ReclamationColumnsEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/Static.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/Static.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/add-reclamation/add-reclamation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/apps/reclamation/reclamation.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zenit/BackOffice" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -72,17 +59,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -183,7 +159,8 @@
       <workItem from="1647468105182" duration="625000" />
       <workItem from="1649150936374" duration="694000" />
       <workItem from="1649151771124" duration="12000" />
-      <workItem from="1649200831542" duration="4263000" />
+      <workItem from="1649200831542" duration="5028000" />
+      <workItem from="1649323551924" duration="1599000" />
     </task>
     <servers />
   </component>
