@@ -22,7 +22,7 @@ export class IdRendererComponent implements ICellRendererAngularComp {
     }
 
     onDetails() {
-        this.router.navigate(['/apps/reclamations/', + this.params.data.id]);
+        this.router.navigate([document.location.pathname + '/' + this.params.data.id]);
     }
 
 }
