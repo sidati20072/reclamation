@@ -18,16 +18,48 @@
 
             <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Nom</mat-label>
+                    <mat-label>Nom ou raison sociale</mat-label>
+                    <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+                    <input name="raisonSociale" formControlName="raisonSociale" matInput required>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Nom du propriétaire</mat-label>
                     <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
                     <input name="nom" formControlName="nom" matInput required>
                 </mat-form-field>
             </div>
             <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
-                    <mat-label>Note</mat-label>
+                    <mat-label>Payment</mat-label>
                     <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
-                    <input name="note" formControlName="note" matInput required>
+                    <input name="payment" formControlName="payment" matInput required>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Loyer</mat-label>
+                    <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+                    <input name="loyer" formControlName="loyer" matInput required>
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Address</mat-label>
+                    <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+                    <input name="address" formControlName="address" matInput required>
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start start">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>ate du Contrat</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
             </div>
 

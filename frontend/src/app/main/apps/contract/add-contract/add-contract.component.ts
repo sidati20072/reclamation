@@ -31,16 +31,23 @@ export class AddContractComponent {
          this.buildForm();
     }
 
+
     buildForm() {
         this.recForm = this._formBuilder.group({
             id: [this.contract.id || null],
             nom: [this.contract.nom || '', Validators.required],
-            note: [this.contract.note || ''],
+            raisonSociale: [this.contract.raisonSociale || ''],
+            payment: [this.contract.payment || ''],
+            date: [this.contract.date || new Date()],
+            address: [this.contract.address || ''],
+            loyer: [this.contract.loyer || ''],
         });
 
     }
 
     save() {
+        this.recForm.value.date = this.datePipe.transform(this.recForm.value.date.toString(), 'yyyy-MM-d');
+
         this.contractService.save(this.recForm.value).subscribe(value => {
             this.matDialogRef.close();
         }, error1 => {

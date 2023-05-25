@@ -5,6 +5,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -28,7 +29,11 @@ public class Contract {
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime createdAt;
-    private String note;
+    private String address;
+    private String loyer;
+    private String date;
+    private String payment;
+    private String raisonSociale;
     @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)
     private List<Document> Documents = new ArrayList<>();

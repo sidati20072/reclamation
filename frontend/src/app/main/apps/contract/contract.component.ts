@@ -54,6 +54,7 @@ export class ContractComponent implements OnInit {
             }
         });
         this.dialogRef.afterClosed().subscribe(response => {
+            this.gridApi.deselectAll();
             this.initTableData();
         });
     }
@@ -138,13 +139,13 @@ export class ContractComponent implements OnInit {
                                 this.deleteContact();
                             }
                         },
-                        {
+                        /*{
                             title: 'Export',
                             icon: 'import_export',
                             fn: () => {
                                 this.onExport();
                             }
-                        },
+                        },*/
                     ],
                 },
             }

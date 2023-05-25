@@ -12,8 +12,12 @@ import java.util.Map;
 
 public enum ContractColumnsEnum implements ColumnsEnum {
     id("id", true, true, true, "idRenderer"),
+    raisonSociale("raisonSociale", true, true, true, ""),
     Nom("nom", true, true, true, ""),
-    note("note", true, true, true, ""),
+    payment("payment", true, true, true, ""),
+    address("address", true, true, true, AttributeType.DATE,""),
+    date("date", true, true, true, ""),
+    loyer("loyer", true, true, true, ""),
     document("document", true, true, true, "docRenderer"),
     createdAt("createdAt", true, true, true, AttributeType.DATE, "");
     private String field;
