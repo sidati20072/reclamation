@@ -5,6 +5,7 @@ public enum DocumentType {
     FEUILLE("FEUILLE"),
     DEMANDE("DEMANDE"),
     FICHE("FICHE"),
+    CONTRACT("CONTRACT"),
     AUTRE("AUTRE");
 
     private String name = "";

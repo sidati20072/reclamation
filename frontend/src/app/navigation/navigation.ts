@@ -15,6 +15,13 @@ export const navigation: FuseNavigation[] = [
                 url: '/apps/reclamations'
             },
             {
+                id: 'contrats',
+                title: 'Contrat',
+                type: 'item',
+                icon: 'account_box',
+                url: '/apps/contrats'
+            },
+            {
                 id: 'contacts',
                 title: 'Utilisateurs',
                 type: 'item',

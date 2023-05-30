@@ -19,6 +19,10 @@ const routes = [
     {
         path: 'reclamations',
         loadChildren: './reclamation/reclamation.module#ReclamationModule'
+    },
+    {
+        path: 'contrats',
+        loadChildren: './contract/contract.module#ContractModule'
     }
 
 ];

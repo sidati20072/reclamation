@@ -26,6 +26,17 @@ public enum DataTableColumnEnum {
             return "reclamation-view";
         }
     },
+    CONTRACT_VIEW {
+        @Override
+        public List<Map<String, Object>> getColumnsList() {
+            return ContractColumnsEnum.allConfigs("");
+        }
+
+        @Override
+        public String getValue() {
+            return "contract-view";
+        }
+    },
     PAYMENT_LINE_VIEW {
         @Override
         public List<Map<String, Object>> getColumnsList() {
