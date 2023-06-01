@@ -40,6 +40,8 @@ export class AddContractComponent {
             payment: [this.contract.payment || ''],
             date: [this.contract.date || new Date()],
             address: [this.contract.address || ''],
+            lastPayment: [this.contract.lastPayment || ''],
+            paymentDuration: [this.contract.paymentDuration || ''],
             loyer: [this.contract.loyer || ''],
         });
 

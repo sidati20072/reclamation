@@ -33,6 +33,8 @@ public class Contract {
     private String loyer;
     private String date;
     private String payment;
+    private String lastPayment;
+    private String paymentDuration;
     private String raisonSociale;
     @OneToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @RestResource(exported = false)

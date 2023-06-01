@@ -7,6 +7,8 @@ export class ContractModel {
     date: string;
     payment: string;
     loyer: string;
+    paymentDuration: string;
+    lastPayment: string;
     documents: DocumentModel[];
     raisonSociale: string;
 

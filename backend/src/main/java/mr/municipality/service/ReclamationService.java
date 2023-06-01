@@ -26,6 +26,10 @@ public class ReclamationService {
     private String path;
 
     public Reclamation save(Reclamation reclamation) {
+        if (reclamation != null && reclamation.getId() != null){
+            Reclamation savedContract = reclamationRepository.getOne(reclamation.getId());
+            reclamation.setDocuments(savedContract.getDocuments());
+        }
         return reclamationRepository.save(reclamation);
     }
 

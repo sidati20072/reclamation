@@ -44,6 +44,20 @@
                     <input name="loyer" formControlName="loyer" matInput required>
                 </mat-form-field>
             </div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Péeriode paiement</mat-label>
+                    <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+                    <input name="paymentDuration" formControlName="paymentDuration" matInput required>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start start">
+                <mat-form-field appearance="outline" fxFlex>
+                    <mat-label>Dernier paiement</mat-label>
+                    <mat-icon matSuffix class="secondary-text">supervised_user_circle</mat-icon>
+                    <input name="lastPayment" formControlName="lastPayment" matInput required>
+                </mat-form-field>
+            </div>
 
             <div fxLayout="row" fxLayoutAlign="start start">
                 <mat-form-field appearance="outline" fxFlex>
@@ -52,6 +66,7 @@
                     <input name="address" formControlName="address" matInput required>
                 </mat-form-field>
             </div>
+
 
             <div fxLayout="row" fxLayoutAlign="start start">
 
