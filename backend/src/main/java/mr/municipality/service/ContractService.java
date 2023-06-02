@@ -28,6 +28,10 @@ public class ContractService {
     private String path;
 
     public Contract save(Contract contract) {
+        if (contract != null && contract.getId() != null){
+            Contract savedContract = repository.getOne(contract.getId());
+            contract.setDocuments(savedContract.getDocuments());
+        }
         return repository.save(contract);
     }
 

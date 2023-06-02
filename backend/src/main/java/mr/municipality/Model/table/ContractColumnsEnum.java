@@ -18,6 +18,8 @@ public enum ContractColumnsEnum implements ColumnsEnum {
     address("address", true, true, true, AttributeType.DATE,""),
     date("date", true, true, true, ""),
     loyer("loyer", true, true, true, ""),
+    PeriodePaiement("paymentDuration", true, true, true, ""),
+    DernierPaiement("lastPayment", true, true, true, ""),
     document("document", true, true, true, "docRenderer"),
     createdAt("createdAt", true, true, true, AttributeType.DATE, "");
     private String field;
